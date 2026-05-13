@@ -16,10 +16,8 @@ Each fighter has roughly a dozen meaningful stats, and "good" is relative
 to the weight class (70% takedown defense is mediocre at heavyweight but
 unremarkable at flyweight). The model also has to keep stats it can see
 separate from claims it would love to invent — "glass chin", "ring rust",
-"mental edge". The genre rewards confident punditry, so without strong
-grounding the model drifts into MMA-talk-show territory. The two-stage
-pipeline — distill each fighter into a strict `FighterProfile`, then
-compare profiles — is the load-bearing design choice for both problems.
+"mental edge". The two-stage pipeline distills each fighter into a strict `FighterProfile`, then comparing the profiles — is the load-bearing design choice for 
+both problems.
 
 ## 2. Iterations
 
@@ -136,7 +134,7 @@ two calls recovers the latency cost.
 
 ## 4. AI disclosure & safety
 
-I used Claude (via Kiro) to scaffold and develop this project end-to-end.
+I used Claude (via Kiro) to structure and develop this project end-to-end.
 Below are specific moments where I caught problems and pushed back.
 
 1. **Wrong OpenAI SDK shape.** Claude generated `openai.ChatCompletion.create(...)`
@@ -145,13 +143,12 @@ Below are specific moments where I caught problems and pushed back.
 
 2. **Hallucinated stats.** The initial fighter dataset gave Khamzat Chimaev
    a 90% takedown defense that didn't match his public record. I
-   cross-checked against ufcstats.com and corrected the values.
+   checked against ufcstats.com and corrected the values.
 
 3. **httpx version conflict.** First run crashed with `TypeError: Client.__init__()
-   got an unexpected keyword argument 'proxies'`. I identified that
+   got an unexpected keyword argument 'proxies'`. I saw that
    `httpx==0.28.1` had been installed while `openai==1.54.4` expected
-   `httpx<0.28`. I directed the downgrade to `0.27.2` and pinned it in
-   `requirements.txt`.
+   `httpx<0.28`. I directed the downgrade to `0.27.2`.
 
 4. **Stale fighter data.** The original dataset was a late-2023 snapshot.
    I noticed Jon Jones showed 27-1 and Ilia Topuria was still listed at
@@ -159,21 +156,13 @@ Below are specific moments where I caught problems and pushed back.
    all 44 existing fighters and add 10 new ones using current stats from
    ufcstats.com and ufc.com.
 
-5. **Eval scores didn't match the report.** After updating fighter data I
-   ran all versions and found the scores in REPORT.md no longer matched
-   actual results. I caught the discrepancy before pushing and directed
-   a full rewrite of Section 2 with real numbers.
-
-6. **V4 negative result.** I noticed calibration was the weakest axis
+5. **V4 negative result.** I noticed calibration was the weakest axis
    (3.33/5) and directed Claude to build a V4 injecting a deterministic
    closeness score as a calibration hint. The eval showed no improvement
    (0.850, calibration still 3.33/5). I accepted the negative result —
-   the report documents why it failed and what the right next step is.
+   the report documents why it failed and what the next possible step is.
 
 **Safety risk: hallucinated fight facts.** The model is tempted to invent
-genre-appropriate details — a "glass chin", a fabricated submission win —
-that could unfairly damage a real fighter's reputation. Mitigation: every
-output field flows through a Pydantic schema, both system prompts explicitly
-forbid inventing fights or attributes, and deterministic percentile/tier
+genre-appropriate details that could unfairly damage a real fighter's reputation. Mitigation: every output field flows through a Pydantic schema, both system prompts explicitly forbid inventing fights or attributes, and deterministic percentile/tier
 context anchors claims to the data. The UI footer labels output as analysis,
 not a betting recommendation.
