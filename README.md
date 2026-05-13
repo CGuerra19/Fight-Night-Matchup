@@ -1,0 +1,202 @@
+# Fight Night Matchup
+
+An AI-powered web app for analyzing hypothetical UFC fights. Pick two fighters
+from a local database of 54 well-known UFC names; the app distills each
+fighter's career stats into a structured profile, then runs a head-to-head
+matchup analysis with predicted advantages, stylistic clash, key factors,
+and a calibrated winner pick.
+
+The AI pipeline runs in two stages so each LLM call has a narrow,
+well-defined job:
+
+1. **Stage 1 — Distill.** For each fighter, raw stats + deterministically
+   computed percentile/tier context are handed to the model, which returns
+   a strict `FighterProfile` (style label, striking/grappling/cardio grades,
+   strengths, weaknesses, recent form, x-factors).
+2. **Stage 2 — Compare.** The two `FighterProfile` objects (not the raw
+   numbers) feed a second model call that returns a `MatchupAnalysis` with
+   four per-category advantages, a stylistic-clash paragraph, key factors,
+   predicted winner, and confidence.
+
+Everything is OpenAI-only — no other API keys, no hosted services. The
+fighter database is a local JSON file, the eval harness writes results to
+disk.
+
+---
+
+## Quick start (copy/paste)
+
+From an empty directory, run these commands in order. Replace
+`<your-repo-url>` with the GitHub URL of this repo and `sk-...` with
+your OpenAI API key.
+
+```bash
+# 1. Clone and enter the repo
+git clone <your-repo-url> fight-night-matchup
+cd fight-night-matchup
+
+# 2. Create and activate a virtualenv (Python 3.11+ required)
+python3.11 -m venv .venv
+source .venv/bin/activate
+
+# 3. Install pinned dependencies
+pip install -r requirements.txt
+
+# 4. Create your .env and paste your OpenAI API key into it
+cp .env.example .env
+echo 'OPENAI_API_KEY=sk-...' > .env     # or open .env in an editor
+
+# 5. Start the web app
+python app.py
+```
+
+Now open <http://127.0.0.1:5000> in your browser. Type two fighter names
+into the inputs (autocomplete suggests matches as you type), click
+**Analyze Matchup**, and you should see two profile cards plus a
+predicted winner within ~5 seconds.
+
+To stop the server: press `Ctrl+C` in the terminal where `python app.py`
+is running.
+
+The sections below repeat these steps in more detail and add the eval
+harness commands.
+
+---
+
+## Requirements
+
+- Python **3.11+** (the grader's environment).
+- An OpenAI API key with access to `gpt-4o-mini`.
+- Internet access (only to reach `api.openai.com`).
+
+The repo has been smoke-tested on macOS and Linux.
+
+---
+
+## Setup
+
+Run these commands from the repo root, in order. They assume `python3.11`
+is on your `PATH`; substitute `python3.12` or `python3` if your install
+uses a different alias for Python 3.11+.
+
+```bash
+# 1. Create and activate a virtualenv
+python3.11 -m venv .venv
+source .venv/bin/activate
+
+# 2. Install pinned dependencies
+pip install -r requirements.txt
+
+# 3. Create your .env from the template, then paste your OpenAI key in
+cp .env.example .env
+# open .env in your editor and set OPENAI_API_KEY=sk-...
+```
+
+---
+
+## Run the web app
+
+```bash
+python app.py
+```
+
+The server logs `Starting Fight Night Matchup on port 5000 (pipeline=v3)`
+and listens on http://127.0.0.1:5000. Open that URL in any modern browser.
+
+### Using the UI
+
+1. Type a fighter name into each input. As you type, an autocomplete
+   dropdown shows fighters from the local database.
+2. Click **Analyze Matchup**.
+3. After a few seconds (two parallel Stage 1 calls + one Stage 2 call),
+   the page shows two fighter profile cards followed by the matchup
+   breakdown and predicted winner.
+
+### Example fighters to try
+
+- Islam Makhachev vs. Justin Gaethje  *(wrestler vs. striker)*
+- Jon Jones vs. Tom Aspinall  *(generational heavyweight matchup)*
+- Alex Pereira vs. Jiri Prochazka  *(power kickboxing vs. unorthodox striking)*
+- Max Holloway vs. Yair Rodriguez  *(volume vs. creativity at featherweight)*
+
+The full fighter list is in `data/fighters.json`.
+
+### Error handling
+
+The app surfaces a clear error banner if a fighter isn't recognized
+(with "did you mean…?" suggestions), if the two inputs are identical, or
+if the OpenAI API call fails. Submission stays disabled during the API
+call so the user can see the loading state.
+
+---
+
+## Run the evaluation
+
+The eval harness scores the pipeline on 12 labeled matchups using a hybrid
+metric: deterministic fact-coverage checks (40%), an LLM-judge rubric for
+factual accuracy / advantage identification / calibration (50%), and a
+forbidden-claim check (10%). Results land in `eval/results/`.
+
+```bash
+# Default: runs version v3 (the full two-stage + percentile-context pipeline)
+python eval/run_eval.py
+```
+
+### Reproducing the V1 → V2 → V3 → V4 sweep from REPORT.md
+
+Set `PIPELINE_VERSION` to switch which version is graded. Each run writes
+to a separately named results file.
+
+```bash
+PIPELINE_VERSION=v1 python eval/run_eval.py     # single-prompt baseline
+PIPELINE_VERSION=v2 python eval/run_eval.py     # two-stage, no percentile context
+PIPELINE_VERSION=v3 python eval/run_eval.py     # two-stage with percentile context (default)
+PIPELINE_VERSION=v4 python eval/run_eval.py     # v3 + deterministic closeness/calibration hint
+```
+
+A run takes ~1–3 minutes and ~$0.05 in OpenAI credit on `gpt-4o-mini`.
+
+Optional flags:
+
+- `--limit 3` — run only the first three cases (smoke test).
+- `--version <tag>` — override the output filename tag.
+
+---
+
+## Project layout
+
+```
+fight-night-matchup/
+├── app.py                    Flask server + routes
+├── data/
+│   ├── fighters.json         Fighter database (54 fighters, stats through early 2025)
+│   └── load_fighters.py      Lookup, fuzzy match, percentile computation
+├── llm/
+│   ├── schemas.py            Pydantic models — the "predictable format"
+│   ├── profile.py            Stage 1 — distill raw stats into a profile
+│   ├── matchup.py            Stage 2 — compare two profiles
+│   ├── v1_single_prompt.py   V1 baseline (single LLM call)
+│   └── pipeline.py           Dispatcher selecting V1/V2/V3/V4
+├── templates/index.html      Single-page UI
+├── static/
+│   ├── style.css
+│   └── app.js                Autocomplete, fetch, render
+├── eval/
+│   ├── test_cases.json       12 labeled matchups
+│   ├── run_eval.py           Hybrid scorer + LLM judge
+│   └── results/              (auto-generated)
+├── requirements.txt
+├── .env.example
+├── README.md
+└── REPORT.md
+```
+
+---
+
+## Data note
+
+`data/fighters.json` is a hand-curated snapshot of public UFC career
+statistics through approximately early 2025, covering 54 well-known fighters
+across all weight classes including women's divisions. The stats and recent
+fight results reflect that point in time and are used for analysis only — this
+app does not claim to have live or current data.

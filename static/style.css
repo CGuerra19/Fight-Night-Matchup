@@ -1,0 +1,278 @@
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-2: #1f242c;
+  --border: #30363d;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #d4202c;
+  --accent-glow: rgba(212, 32, 44, 0.25);
+  --good: #3fb950;
+  --warn: #d29922;
+  --bad: #f85149;
+  --radius: 8px;
+  --max-width: 1100px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+header {
+  text-align: center;
+  padding: 2.5rem 1rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+header h1 {
+  margin: 0;
+  font-size: 2.4rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-shadow: 0 0 12px var(--accent-glow);
+}
+.tagline { color: var(--muted); margin: 0.5rem 0 0; }
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+#matchup-form .inputs {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 1rem;
+  align-items: end;
+}
+.fighter-input { position: relative; }
+.fighter-input label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.fighter-input input {
+  width: 100%;
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+}
+.fighter-input input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+.vs {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--accent);
+  padding-bottom: 0.75rem;
+}
+
+.suggestions {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  list-style: none;
+  margin: 0;
+  padding: 0.25rem 0;
+  max-height: 240px;
+  overflow-y: auto;
+  z-index: 10;
+}
+.suggestions li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.suggestions li:hover, .suggestions li.active {
+  background: var(--panel-2);
+}
+
+#submit-btn {
+  display: block;
+  margin: 1.5rem auto 0;
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.85rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+#submit-btn:hover:not(:disabled) { background: #b71b25; }
+#submit-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+#loading {
+  text-align: center;
+  margin: 2rem 0;
+  color: var(--muted);
+}
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  margin: 0 auto 0.8rem;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.error-banner {
+  background: rgba(248, 81, 73, 0.1);
+  border: 1px solid var(--bad);
+  color: #ffb4b4;
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin: 1.5rem 0;
+}
+.error-banner ul { margin: 0.4rem 0 0 1.2rem; padding: 0; }
+
+#results { margin-top: 2rem; }
+
+.profiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.profile, .matchup {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+.matchup { margin-top: 1.5rem; }
+
+.profile h2 {
+  margin: 0 0 0.25rem;
+  color: var(--accent);
+  font-size: 1.3rem;
+}
+.profile .sub {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.profile .style-tag {
+  display: inline-block;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.8rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+.profile .grades {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.profile .grade {
+  background: var(--panel-2);
+  border-radius: var(--radius);
+  padding: 0.5rem;
+  text-align: center;
+}
+.profile .grade .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; }
+.profile .grade .value { font-weight: 600; font-size: 0.85rem; }
+
+.tier-elite { color: #58a6ff; }
+.tier-above-average { color: var(--good); }
+.tier-average { color: var(--text); }
+.tier-below-average { color: var(--warn); }
+.tier-weak { color: var(--bad); }
+
+.profile h3 {
+  margin: 1rem 0 0.4rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+.profile ul { margin: 0; padding-left: 1.2rem; }
+.profile li { margin-bottom: 0.2rem; }
+.profile .recent-form {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--text);
+  margin: 0;
+}
+
+.matchup h2 { margin: 0 0 1rem; }
+.advantage-row {
+  display: grid;
+  grid-template-columns: 130px 130px 100px 1fr;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.92rem;
+}
+.advantage-row:last-of-type { border-bottom: none; }
+.advantage-row .cat {
+  text-transform: capitalize;
+  color: var(--muted);
+  font-weight: 600;
+}
+.mag-decisive { color: var(--bad); font-weight: 700; }
+.mag-clear    { color: var(--warn); font-weight: 600; }
+.mag-slight   { color: var(--text); }
+.mag-even     { color: var(--muted); font-style: italic; }
+
+.prediction {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: var(--panel-2);
+  border-radius: var(--radius);
+  border-left: 4px solid var(--accent);
+}
+.prediction .winner {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+.prediction .confidence {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.8rem;
+  padding: 2rem 1rem;
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+}
+
+@media (max-width: 720px) {
+  #matchup-form .inputs { grid-template-columns: 1fr; }
+  .vs { padding: 0.25rem 0; text-align: center; }
+  .profiles { grid-template-columns: 1fr; }
+  .advantage-row { grid-template-columns: 1fr; gap: 0.2rem; }
+}

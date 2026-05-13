@@ -1,0 +1,1312 @@
+{
+  "version": "v4",
+  "pipeline_version": "v4",
+  "model_profile": "gpt-4o-mini",
+  "model_matchup": "gpt-4o-mini",
+  "model_judge": "gpt-4o-mini",
+  "mean_aggregate": 0.8500000000000001,
+  "cases": [
+    {
+      "case_id": "lw-makhachev-gaethje",
+      "fact_coverage": 1.0,
+      "fact_hits": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "forbidden_clean": 1.0,
+      "forbidden_violations": [
+        false
+      ],
+      "judge_factual": 5,
+      "judge_advantages": 4,
+      "judge_calibration": 4,
+      "judge_reasoning": "The analysis accurately reflects the fighters' stats, correctly identifying Makhachev's elite grappling and striking accuracy as significant advantages over Gaethje's weaknesses in takedown offense and striking defense. However, while it mentions Makhachev's clear edge in striking, it could have emphasized the central tension of whether Makhachev can take Gaethje down, which is crucial given Gaethje's elite takedown defense. The confidence level is high, which is appropriate given the clear advantages Makhachev holds, but the analysis could have acknowledged the potential for Gaethje's striking to disrupt Makhachev's game plan.",
+      "aggregate": 0.9333333333333333,
+      "response": {
+        "profile_a": {
+          "name": "Islam Makhachev",
+          "weight_class": "Lightweight",
+          "record": "26-1-0",
+          "style_label": "grappling striker",
+          "striking_grade": "elite",
+          "grappling_grade": "elite",
+          "cardio_durability_grade": "above-average",
+          "top_strengths": [
+            "elite striking accuracy",
+            "strong grappling",
+            "excellent striking defense",
+            "high takedown rate"
+          ],
+          "top_weaknesses": [
+            "limited volume striking",
+            "average takedown defense"
+          ],
+          "recent_form": "Makhachev is on a 4-fight win streak with notable finishes against top competition.",
+          "x_factors": [
+            "high fight IQ",
+            "submission specialist",
+            "strong finishing rate"
+          ]
+        },
+        "profile_b": {
+          "name": "Justin Gaethje",
+          "weight_class": "Lightweight",
+          "record": "27-5-0",
+          "style_label": "volume striker",
+          "striking_grade": "elite",
+          "grappling_grade": "weak",
+          "cardio_durability_grade": "average",
+          "top_strengths": [
+            "high output",
+            "accurate striking",
+            "elite takedown defense"
+          ],
+          "top_weaknesses": [
+            "absorbs too many strikes",
+            "poor takedown offense",
+            "below-average striking defense"
+          ],
+          "recent_form": "1 win and 4 losses in the last 5 fights, with notable finishes against top competition.",
+          "x_factors": [
+            "high finishing rate",
+            "durability concerns after recent KO losses",
+            "aggressive fighting style"
+          ]
+        },
+        "matchup": {
+          "advantages": [
+            {
+              "category": "striking",
+              "favored_fighter": "Islam Makhachev",
+              "magnitude": "clear",
+              "reasoning": "Makhachev's elite striking accuracy and strong defensive skills give him a clear edge over Gaethje's below-average striking defense."
+            },
+            {
+              "category": "grappling",
+              "favored_fighter": "Islam Makhachev",
+              "magnitude": "decisive",
+              "reasoning": "Makhachev's elite grappling skills and high takedown rate contrast sharply with Gaethje's weak grappling, making this a decisive advantage."
+            },
+            {
+              "category": "cardio_durability",
+              "favored_fighter": "Islam Makhachev",
+              "magnitude": "clear",
+              "reasoning": "Makhachev's above-average cardio and durability are favored over Gaethje's average endurance and recent durability concerns."
+            },
+            {
+              "category": "physical",
+              "favored_fighter": "even",
+              "magnitude": "even",
+              "reasoning": "Both fighters are elite athletes in the lightweight division, making their physical attributes evenly matched."
+            }
+          ],
+          "stylistic_clash": "Makhachev's grappling striker style will likely pressure Gaethje's volume striking approach, forcing him to defend against takedowns while trying to maintain his striking output. Gaethje's aggressive style may leave him vulnerable to Makhachev's elite grappling and striking defense.",
+          "key_factors": [
+            "Takedown threat from Makhachev",
+            "Gaethje's ability to manage range and output",
+            "Makhachev's striking defense against Gaethje's volume",
+            "Durability concerns for Gaethje after recent KO losses",
+            "Fight IQ and adaptability of Makhachev"
+          ],
+          "predicted_winner": "Islam Makhachev",
+          "confidence": "high",
+          "prediction_rationale": "Islam Makhachev is favored due to his decisive advantages in grappling and clear edge in striking accuracy and defense. The stylistic clash favors Makhachev's ability to control the fight with takedowns and mitigate Gaethje's striking output, leading to a likely victory."
+        }
+      },
+      "error": null
+    },
+    {
+      "case_id": "lw-oliveira-tsarukyan",
+      "fact_coverage": 1.0,
+      "fact_hits": [
+        true,
+        true,
+        true
+      ],
+      "forbidden_clean": 1.0,
+      "forbidden_violations": [
+        false
+      ],
+      "judge_factual": 4,
+      "judge_advantages": 3,
+      "judge_calibration": 4,
+      "judge_reasoning": "The analysis accurately reflects Oliveira's elite submission skills and Tsarukyan's strong takedown ability, but it fails to emphasize Oliveira's significant vulnerability in takedown defense, which is crucial given Tsarukyan's wrestling prowess. The matchup is presented as evenly matched across all categories, which downplays the clear advantages Tsarukyan has in takedown success against Oliveira's weak defense. The confidence level is appropriate given the competitive nature of the matchup, but the analysis could benefit from a more nuanced understanding of the fighters' strengths and weaknesses.",
+      "aggregate": 0.8666666666666666,
+      "response": {
+        "profile_a": {
+          "name": "Charles Oliveira",
+          "weight_class": "Lightweight",
+          "record": "35-10-0",
+          "style_label": "submission grappler",
+          "striking_grade": "below-average",
+          "grappling_grade": "elite",
+          "cardio_durability_grade": "above-average",
+          "top_strengths": [
+            "elite submission skills",
+            "strong finishing rate",
+            "good striking volume"
+          ],
+          "top_weaknesses": [
+            "weak takedown defense",
+            "below-average striking defense"
+          ],
+          "recent_form": "Charles Oliveira is on a three-fight win streak with notable finishes against top contenders.",
+          "x_factors": [
+            "high submission attempt rate",
+            "recent KO power",
+            "age-related decline concerns"
+          ]
+        },
+        "profile_b": {
+          "name": "Arman Tsarukyan",
+          "weight_class": "Lightweight",
+          "record": "23-3-0",
+          "style_label": "well-rounded grappler",
+          "striking_grade": "average",
+          "grappling_grade": "elite",
+          "cardio_durability_grade": "above-average",
+          "top_strengths": [
+            "elite takedown rate",
+            "strong submission skills",
+            "good striking defense"
+          ],
+          "top_weaknesses": [
+            "average striking output",
+            "average takedown defense"
+          ],
+          "recent_form": "Currently on a four-fight win streak with notable victories including a KO over Beneil Dariush.",
+          "x_factors": [
+            "high finishing rate",
+            "strong fight IQ"
+          ]
+        },
+        "matchup": {
+          "advantages": [
+            {
+              "category": "striking",
+              "favored_fighter": "even",
+              "magnitude": "even",
+              "reasoning": "Both fighters display average to below-average striking defense, making their striking exchanges competitive."
+            },
+            {
+              "category": "grappling",
+              "favored_fighter": "even",
+              "magnitude": "even",
+              "reasoning": "Both fighters possess elite grappling skills, making their grappling exchanges likely to be evenly matched."
+            },
+            {
+              "category": "cardio_durability",
+              "favored_fighter": "even",
+              "magnitude": "even",
+              "reasoning": "Both fighters have above-average cardio and durability, indicating they can maintain a high pace throughout the fight."
+            },
+            {
+              "category": "physical",
+              "favored_fighter": "even",
+              "magnitude": "even",
+              "reasoning": "Both fighters are well-rounded physically, with no clear advantages in size or strength."
+            }
+          ],
+          "stylistic_clash": "This matchup features a submission grappler in Charles Oliveira against a well-rounded grappler in Arman Tsarukyan. Oliveira's elite submission skills may be tested against Tsarukyan's strong takedown rate and good striking defense, leading to an interesting dynamic on the ground and in striking exchanges.",
+          "key_factors": [
+            "Submission attempts from Oliveira and how Tsarukyan defends against them.",
+            "Takedown success rate for Tsarukyan, given Oliveira's weak takedown defense.",
+            "Striking volume and accuracy from both fighters, especially in the early rounds.",
+            "Fight IQ and adaptability during exchanges, particularly if the fight goes into later rounds."
+          ],
+          "predicted_winner": "Charles Oliveira",
+          "confidence": "medium",
+          "prediction_rationale": "While both fighters are evenly matched across all categories, Charles Oliveira's elite submission skills and high submission attempt rate could give him the edge in grappling exchanges. Additionally, his recent form and finishing ability suggest he can capitalize on any openings Tsarukyan presents, making him a dangerous opponent despite the competitive nature of the matchup."
+        }
+      },
+      "error": null
+    },
+    {
+      "case_id": "lw-mcgregor-poirier",
+      "fact_coverage": 0.6666666666666666,
+      "fact_hits": [
+        false,
+        true,
+        true
+      ],
+      "forbidden_clean": 1.0,
+      "forbidden_violations": [
+        false
+      ],
+      "judge_factual": 2,
+      "judge_advantages": 3,
+      "judge_calibration": 2,
+      "judge_reasoning": "The analysis contains several inaccuracies, particularly in the recent form of both fighters. It states that McGregor is on a two-fight losing streak, which is misleading as he has lost three consecutive fights. Additionally, it inaccurately claims that both fighters are evenly matched in striking, despite Poirier having a slight edge in striking output and accuracy. The analysis does identify Poirier's grappling advantage correctly, but it fails to emphasize McGregor's significant recent struggles and the impact of Poirier's recent win against tougher competition. The confidence level is also miscalibrated; given McGregor's recent form and Poirier's more favorable recent performance, a lower confidence in McGregor's victory would be more appropriate.",
+      "aggregate": 0.6,
+      "response": {
+        "profile_a": {
+          "name": "Conor McGregor",
+          "weight_class": "Lightweight",
+          "record": "22-6-0",
+          "style_label": "striking specialist",
+          "striking_grade": "above-average",
+          "grappling_grade": "below-average",
+          "cardio_durability_grade": "average",
+          "top_strengths": [
+            "High striking output",
+            "Above-average takedown accuracy",
+            "Strong finishing ability"
+          ],
+          "top_weaknesses": [
+            "Below-average striking accuracy",
+            "Average takedown defense",
+            "Limited grappling attempts"
+          ],
+          "recent_form": "Currently on a two-fight losing streak, with recent finishes against lower-level competition.",
+          "x_factors": [
+            "Injury concerns",
+            "High-profile fight experience",
+            "Southpaw stance advantages"
+          ]
+        },
+        "profile_b": {
+          "name": "Dustin Poirier",
+          "weight_class": "Lightweight",
+          "record": "30-9-0",
+          "style_label": "volume striker",
+          "striking_grade": "above-average",
+          "grappling_grade": "average",
+          "cardio_durability_grade": "average",
+          "top_strengths": [
+            "high output striking",
+            "submission skills",
+            "experience"
+          ],
+          "top_weaknesses": [
+            "below-average takedown defense",
+            "average striking accuracy",
+            "vulnerable to KOs"
+          ],
+          "recent_form": "1 win and 4 losses in last 5 fights, with notable finishes and tough competition.",
+          "x_factors": [
+            "southpaw stance",
+            "high fight IQ"
+          ]
+        },
+        "matchup": {
+          "advantages": [
+            {
+              "category": "striking",
+              "favored_fighter": "even",
+              "magnitude": "even",
+              "reasoning": "Both fighters possess above-average striking output, making this category evenly matched."
+            },
+            {
+              "category": "grappling",
+              "favored_fighter": "Dustin Poirier",
+              "magnitude": "clear",
+              "reasoning": "Poirier has average grappling skills and submission abilities, while McGregor's grappling is below-average."
+            },
+            {
+              "category": "cardio_durability",
+              "favored_fighter": "even",
+              "magnitude": "even",
+              "reasoning": "Both fighters have average cardio and durability, making them evenly matched in this aspect."
+            },
+            {
+              "category": "physical",
+              "favored_fighter": "even",
+              "magnitude": "even",
+              "reasoning": "Both fighters share similar physical attributes and have southpaw stances, leading to an even matchup."
+            }
+          ],
+          "stylistic_clash": "This matchup features a striking specialist in McGregor against a volume striker in Poirier. McGregor's high striking output will be tested against Poirier's ability to absorb damage and return fire, creating an engaging stand-up battle.",
+          "key_factors": [
+            "Striking accuracy and output",
+            "Takedown threat from both fighters",
+            "Ability to absorb damage",
+            "Experience in high-pressure situations"
+          ],
+          "predicted_winner": "Conor McGregor",
+          "confidence": "medium",
+          "prediction_rationale": "While both fighters are evenly matched in striking and physical attributes, McGregor's high-profile fight experience and strong finishing ability give him an edge. The grappling advantage for Poirier is notable, but McGregor's striking output and ability to capitalize on openings could lead to a decisive finish."
+        }
+      },
+      "error": null
+    },
+    {
+      "case_id": "fw-holloway-rodriguez",
+      "fact_coverage": 1.0,
+      "fact_hits": [
+        true,
+        true,
+        true
+      ],
+      "forbidden_clean": 1.0,
+      "forbidden_violations": [
+        false
+      ],
+      "judge_factual": 5,
+      "judge_advantages": 5,
+      "judge_calibration": 4,
+      "judge_reasoning": "The analysis accurately reflects the input data, correctly identifying Holloway's elite striking output and cardio as significant advantages over Rodriguez's average striking and below-average durability. The mention of both fighters' grappling weaknesses is well-balanced, and the analysis captures the stylistic clash effectively. However, the confidence level is rated as medium, which may be slightly understated given the clear advantages Holloway has in striking and cardio, suggesting a higher confidence could be warranted.",
+      "aggregate": 0.9666666666666667,
+      "response": {
+        "profile_a": {
+          "name": "Max Holloway",
+          "weight_class": "Lightweight",
+          "record": "27-7-0",
+          "style_label": "volume striker",
+          "striking_grade": "elite",
+          "grappling_grade": "below-average",
+          "cardio_durability_grade": "above-average",
+          "top_strengths": [
+            "high output striking",
+            "strong cardio",
+            "good striking defense"
+          ],
+          "top_weaknesses": [
+            "low takedown threat",
+            "below-average accuracy",
+            "absorbs significant strikes"
+          ],
+          "recent_form": "1 win in last 5 fights, with notable KO loss to Ilia Topuria.",
+          "x_factors": [
+            "high volume output",
+            "experience against top competition",
+            "recent KO loss may affect confidence"
+          ]
+        },
+        "profile_b": {
+          "name": "Yair Rodriguez",
+          "weight_class": "Featherweight",
+          "record": "19-4-0",
+          "style_label": "dynamic striker",
+          "striking_grade": "average",
+          "grappling_grade": "weak",
+          "cardio_durability_grade": "below-average",
+          "top_strengths": [
+            "high output striking",
+            "creative striking techniques",
+            "submission threat"
+          ],
+          "top_weaknesses": [
+            "poor takedown defense",
+            "absorbs too many strikes",
+            "inconsistent durability"
+          ],
+          "recent_form": "Yair is coming off a two-fight losing streak against top competition, with a notable win over Josh Emmett in between.",
+          "x_factors": [
+            "creative striking",
+            "finishing ability",
+            "recent knockout losses"
+          ]
+        },
+        "matchup": {
+          "advantages": [
+            {
+              "category": "striking",
+              "favored_fighter": "Max Holloway",
+              "magnitude": "clear",
+              "reasoning": "Holloway's elite striking grade and high output give him a significant advantage over Rodriguez's average striking."
+            },
+            {
+              "category": "grappling",
+              "favored_fighter": "even",
+              "magnitude": "even",
+              "reasoning": "Both fighters have weaknesses in grappling, with Holloway's below-average grappling and Rodriguez's weak takedown defense balancing each other out."
+            },
+            {
+              "category": "cardio_durability",
+              "favored_fighter": "Max Holloway",
+              "magnitude": "clear",
+              "reasoning": "Holloway's above-average cardio and durability contrast sharply with Rodriguez's below-average ratings in these areas."
+            },
+            {
+              "category": "physical",
+              "favored_fighter": "even",
+              "magnitude": "even",
+              "reasoning": "Both fighters are competitive physically, with neither showing a clear edge in size or strength."
+            }
+          ],
+          "stylistic_clash": "Holloway's volume striking style will likely pressure Rodriguez, who relies on creativity and dynamic techniques. This matchup could lead to a battle of attrition, where Holloway's high output may overwhelm Rodriguez's inconsistent durability.",
+          "key_factors": [
+            "Holloway's ability to maintain high output over three rounds",
+            "Rodriguez's creative striking and finishing ability",
+            "The impact of recent knockout losses on both fighters' confidence",
+            "Holloway's experience against top competition",
+            "Rodriguez's poor takedown defense against Holloway's striking pressure"
+          ],
+          "predicted_winner": "Max Holloway",
+          "confidence": "medium",
+          "prediction_rationale": "Max Holloway is favored due to his clear advantages in striking and cardio durability, which are crucial in a matchup against a dynamic striker like Rodriguez. While both fighters have experienced recent knockout losses, Holloway's high-volume output and experience against elite competition suggest he can capitalize on Rodriguez's inconsistencies."
+        }
+      },
+      "error": null
+    },
+    {
+      "case_id": "fw-volkanovski-topuria",
+      "fact_coverage": 1.0,
+      "fact_hits": [
+        true,
+        true,
+        true
+      ],
+      "forbidden_clean": 1.0,
+      "forbidden_violations": [
+        false
+      ],
+      "judge_factual": 4,
+      "judge_advantages": 4,
+      "judge_calibration": 3,
+      "judge_reasoning": "The analysis is mostly accurate, but it slightly misrepresents the striking advantage by stating both fighters have high striking accuracy, while Volkanovski's is elite and Topuria's is only above-average. It correctly identifies Volkanovski's grappling advantage and Topuria's cardio edge, but the physical advantage is somewhat overstated; while Topuria is unbeaten, Volkanovski's recent KO losses should weigh heavily in the analysis. The confidence level is medium, which is appropriate given the matchup's complexity, but the analysis could have been more definitive about the implications of Volkanovski's recent form.",
+      "aggregate": 0.8666666666666666,
+      "response": {
+        "profile_a": {
+          "name": "Alexander Volkanovski",
+          "weight_class": "Featherweight",
+          "record": "26-4-0",
+          "style_label": "volume striker",
+          "striking_grade": "elite",
+          "grappling_grade": "elite",
+          "cardio_durability_grade": "average",
+          "top_strengths": [
+            "high output striking",
+            "elite striking accuracy",
+            "strong takedown game"
+          ],
+          "top_weaknesses": [
+            "average takedown defense",
+            "recent KO losses",
+            "limited submission attempts"
+          ],
+          "recent_form": "Currently on a three-fight losing streak, with two of those losses by KO.",
+          "x_factors": [
+            "age-related decline",
+            "high fight IQ",
+            "recent drop in performance"
+          ]
+        },
+        "profile_b": {
+          "name": "Ilia Topuria",
+          "weight_class": "Lightweight",
+          "record": "17-0-0",
+          "style_label": "power striker",
+          "striking_grade": "above-average",
+          "grappling_grade": "average",
+          "cardio_durability_grade": "above-average",
+          "top_strengths": [
+            "elite striking defense",
+            "high striking accuracy",
+            "solid takedown defense"
+          ],
+          "top_weaknesses": [
+            "average grappling",
+            "moderate takedown volume"
+          ],
+          "recent_form": "Ilia Topuria is on a five-fight win streak with four finishes, showcasing his striking power and submission skills against top competition.",
+          "x_factors": [
+            "unbeaten record",
+            "high finishing rate",
+            "strong fight IQ"
+          ]
+        },
+        "matchup": {
+          "advantages": [
+            {
+              "category": "striking",
+              "favored_fighter": "even",
+              "magnitude": "even",
+              "reasoning": "Both fighters exhibit high striking accuracy, with Volkanovski's elite striking versus Topuria's above-average level making this category competitive."
+            },
+            {
+              "category": "grappling",
+              "favored_fighter": "Alexander Volkanovski",
+              "magnitude": "clear",
+              "reasoning": "Volkanovski's elite grappling skills and strong takedown game provide him a clear advantage over Topuria's average grappling."
+            },
+            {
+              "category": "cardio_durability",
+              "favored_fighter": "Ilia Topuria",
+              "magnitude": "slight",
+              "reasoning": "Topuria's above-average cardio and durability slightly edge out Volkanovski's average performance in this category."
+            },
+            {
+              "category": "physical",
+              "favored_fighter": "Ilia Topuria",
+              "magnitude": "clear",
+              "reasoning": "Topuria's physical attributes, combined with his unbeaten record, give him a clear edge over Volkanovski, who is showing signs of age-related decline."
+            }
+          ],
+          "stylistic_clash": "Volkanovski's volume striking style will likely clash with Topuria's power striking approach, creating a dynamic where Volkanovski attempts to outpace Topuria while avoiding his knockout power. The fight may see Volkanovski leveraging his grappling to mitigate Topuria's striking threat, especially given Topuria's average grappling skills.",
+          "key_factors": [
+            "Volkanovski's ability to manage range and utilize his volume striking against Topuria's power.",
+            "Topuria's striking defense and ability to capitalize on Volkanovski's recent KO losses.",
+            "The effectiveness of Volkanovski's takedown game against Topuria's solid takedown defense.",
+            "Cardio management for both fighters, especially in later rounds given Volkanovski's average durability."
+          ],
+          "predicted_winner": "Ilia Topuria",
+          "confidence": "medium",
+          "prediction_rationale": "While Volkanovski has a clear advantage in grappling, Topuria's power striking and elite striking defense present significant challenges for him, especially considering Volkanovski's recent KO losses. The physical edge and unbeaten record of Topuria, along with his above-average cardio, suggest he can withstand Volkanovski's output while finding opportunities to land powerful strikes."
+        }
+      },
+      "error": null
+    },
+    {
+      "case_id": "mw-adesanya-strickland",
+      "fact_coverage": 1.0,
+      "fact_hits": [
+        true,
+        true,
+        true
+      ],
+      "forbidden_clean": 1.0,
+      "forbidden_violations": [
+        false
+      ],
+      "judge_factual": 4,
+      "judge_advantages": 4,
+      "judge_calibration": 3,
+      "judge_reasoning": "The analysis is mostly accurate, but it contains a few minor inaccuracies. For instance, it states that Strickland has an 'elite striking grade,' which is misleading given that Adesanya's striking accuracy is higher. The advantages identified are mostly correct, particularly Strickland's striking output and takedown defense, but it could have emphasized Adesanya's elite striking defense more. The calibration is somewhat high; while Strickland does have advantages, the matchup isn't overwhelmingly one-sided, and the confidence level could be adjusted to reflect that.",
+      "aggregate": 0.8666666666666666,
+      "response": {
+        "profile_a": {
+          "name": "Israel Adesanya",
+          "weight_class": "Middleweight",
+          "record": "24-5-0",
+          "style_label": "striking specialist",
+          "striking_grade": "above-average",
+          "grappling_grade": "weak",
+          "cardio_durability_grade": "average",
+          "top_strengths": [
+            "high striking accuracy",
+            "elite striking defense",
+            "low significant strikes absorbed"
+          ],
+          "top_weaknesses": [
+            "poor takedown offense",
+            "average takedown defense",
+            "below-average output"
+          ],
+          "recent_form": "1-4 in last 5 fights, with notable losses to Dricus du Plessis and Sean Strickland.",
+          "x_factors": [
+            "high fight IQ",
+            "recent drop in performance",
+            "age-related decline"
+          ]
+        },
+        "profile_b": {
+          "name": "Sean Strickland",
+          "weight_class": "Middleweight",
+          "record": "29-7-0",
+          "style_label": "volume striker",
+          "striking_grade": "elite",
+          "grappling_grade": "average",
+          "cardio_durability_grade": "above-average",
+          "top_strengths": [
+            "high output striking",
+            "solid takedown defense",
+            "good striking defense"
+          ],
+          "top_weaknesses": [
+            "low striking accuracy",
+            "average grappling",
+            "can be hit frequently"
+          ],
+          "recent_form": "Sean Strickland is on a 4-fight win streak with notable victories over Israel Adesanya and Paulo Costa.",
+          "x_factors": [
+            "high volume output",
+            "strong chin",
+            "recent high-profile wins"
+          ]
+        },
+        "matchup": {
+          "advantages": [
+            {
+              "category": "striking",
+              "favored_fighter": "Sean Strickland",
+              "magnitude": "clear",
+              "reasoning": "Strickland's elite striking grade and high output make him a more effective striker compared to Adesanya's above-average striking."
+            },
+            {
+              "category": "grappling",
+              "favored_fighter": "Sean Strickland",
+              "magnitude": "clear",
+              "reasoning": "Strickland's solid takedown defense and average grappling skills give him a clear edge over Adesanya, who has weak grappling."
+            },
+            {
+              "category": "cardio_durability",
+              "favored_fighter": "even",
+              "magnitude": "even",
+              "reasoning": "Both fighters have average to above-average cardio and durability, making this category even."
+            },
+            {
+              "category": "physical",
+              "favored_fighter": "Sean Strickland",
+              "magnitude": "decisive",
+              "reasoning": "Strickland's strong chin and overall physicality provide him a decisive advantage over Adesanya, who is showing signs of age-related decline."
+            }
+          ],
+          "stylistic_clash": "Adesanya, as a striking specialist, typically relies on precision and defense, while Strickland's volume striking approach puts pressure on opponents to engage more. This matchup will likely see Strickland's high output challenging Adesanya's ability to manage distance and counter effectively.",
+          "key_factors": [
+            "Strickland's volume output may overwhelm Adesanya's lower strike rate.",
+            "Adesanya's ability to defend against Strickland's aggressive striking will be crucial.",
+            "The effectiveness of Strickland's takedown defense against any potential grappling attempts from Adesanya.",
+            "Adesanya's recent drop in performance could impact his confidence and effectiveness in the fight."
+          ],
+          "predicted_winner": "Sean Strickland",
+          "confidence": "high",
+          "prediction_rationale": "Sean Strickland's clear advantages in striking output and grappling defense, combined with his recent form and physicality, position him strongly against Adesanya. The stylistic clash favors Strickland's volume striking, which could disrupt Adesanya's rhythm and defensive strategies."
+        }
+      },
+      "error": null
+    },
+    {
+      "case_id": "mw-chimaev-whittaker",
+      "fact_coverage": 1.0,
+      "fact_hits": [
+        true,
+        true,
+        true
+      ],
+      "forbidden_clean": 1.0,
+      "forbidden_violations": [
+        false
+      ],
+      "judge_factual": 4,
+      "judge_advantages": 4,
+      "judge_calibration": 3,
+      "judge_reasoning": "The analysis accurately identifies Khamzat Chimaev's elite grappling and striking accuracy as significant advantages over Robert Whittaker, who has weak striking accuracy and strong takedown defense. However, it inaccurately labels Whittaker as a 'striking wrestler' instead of emphasizing his technical striking background. The confidence level is high, which is somewhat justified given Chimaev's advantages, but the matchup is not as clear-cut as suggested, especially considering Whittaker's elite takedown defense. Overall, the analysis is strong but could benefit from a more nuanced view of Whittaker's capabilities.",
+      "aggregate": 0.8666666666666666,
+      "response": {
+        "profile_a": {
+          "name": "Khamzat Chimaev",
+          "weight_class": "Middleweight",
+          "record": "15-0-0",
+          "style_label": "pressure grappler",
+          "striking_grade": "average",
+          "grappling_grade": "elite",
+          "cardio_durability_grade": "above-average",
+          "top_strengths": [
+            "elite striking accuracy",
+            "elite takedown ability",
+            "strong submission skills"
+          ],
+          "top_weaknesses": [
+            "average striking defense"
+          ],
+          "recent_form": "Currently on a five-fight win streak with notable victories over top contenders.",
+          "x_factors": [
+            "high finishing rate",
+            "strong fight IQ",
+            "excellent durability"
+          ]
+        },
+        "profile_b": {
+          "name": "Robert Whittaker",
+          "weight_class": "Middleweight",
+          "record": "26-8-0",
+          "style_label": "striking wrestler",
+          "striking_grade": "average",
+          "grappling_grade": "above-average",
+          "cardio_durability_grade": "above-average",
+          "top_strengths": [
+            "elite takedown defense",
+            "above-average striking defense",
+            "solid cardio"
+          ],
+          "top_weaknesses": [
+            "weak striking accuracy",
+            "average significant strikes landed",
+            "recent losses to top contenders"
+          ],
+          "recent_form": "1 win and 4 losses in the last 5 fights, facing top-tier competition.",
+          "x_factors": [
+            "experienced veteran",
+            "high fight IQ",
+            "durability under pressure"
+          ]
+        },
+        "matchup": {
+          "advantages": [
+            {
+              "category": "striking",
+              "favored_fighter": "Khamzat Chimaev",
+              "magnitude": "clear",
+              "reasoning": "Chimaev has elite striking accuracy, which gives him a significant edge over Whittaker's weak striking accuracy."
+            },
+            {
+              "category": "grappling",
+              "favored_fighter": "Khamzat Chimaev",
+              "magnitude": "clear",
+              "reasoning": "Chimaev's elite grappling skills and strong takedown ability far surpass Whittaker's above-average grappling."
+            },
+            {
+              "category": "cardio_durability",
+              "favored_fighter": "even",
+              "magnitude": "even",
+              "reasoning": "Both fighters possess above-average cardio and durability, making this category even."
+            },
+            {
+              "category": "physical",
+              "favored_fighter": "even",
+              "magnitude": "even",
+              "reasoning": "Both fighters are competitive in physical attributes, with neither having a clear advantage."
+            }
+          ],
+          "stylistic_clash": "Chimaev's pressure grappling style will likely clash with Whittaker's striking wrestler approach, creating a dynamic where Chimaev will look to close the distance and take the fight to the ground. Whittaker will need to utilize his striking defense and takedown defense to keep the fight standing and avoid being overwhelmed by Chimaev's grappling.",
+          "key_factors": [
+            "Chimaev's elite takedown ability and finishing rate",
+            "Whittaker's takedown defense against Chimaev's pressure",
+            "Chimaev's striking accuracy versus Whittaker's striking defense",
+            "The impact of recent form on both fighters' confidence",
+            "Cardio management in a high-pressure environment"
+          ],
+          "predicted_winner": "Khamzat Chimaev",
+          "confidence": "high",
+          "prediction_rationale": "Khamzat Chimaev has clear advantages in both striking and grappling, with his elite skills likely overwhelming Whittaker's defenses. The stylistic clash favors Chimaev, as his pressure grappling can exploit Whittaker's recent struggles against top competition, leading to a likely finish."
+        }
+      },
+      "error": null
+    },
+    {
+      "case_id": "ww-belal-rakhmonov",
+      "fact_coverage": 1.0,
+      "fact_hits": [
+        true,
+        true,
+        true
+      ],
+      "forbidden_clean": 1.0,
+      "forbidden_violations": [
+        false
+      ],
+      "judge_factual": 5,
+      "judge_advantages": 5,
+      "judge_calibration": 4,
+      "judge_reasoning": "The analysis accurately reflects the fighters' stats and strengths, correctly identifying Rakhmonov's advantages in striking, grappling, and physicality, while noting Muhammad's weaknesses. The mention of Rakhmonov's finishing ability versus Muhammad's grind-it-out style aligns well with the provided notes. However, the confidence level of 'high' may be slightly overstated given the potential for Muhammad's durability and fight IQ to influence the outcome, suggesting a more cautious approach would be appropriate.",
+      "aggregate": 0.9666666666666667,
+      "response": {
+        "profile_a": {
+          "name": "Belal Muhammad",
+          "weight_class": "Welterweight",
+          "record": "25-3-0",
+          "style_label": "pressure striker",
+          "striking_grade": "below-average",
+          "grappling_grade": "weak",
+          "cardio_durability_grade": "average",
+          "top_strengths": [
+            "high fight IQ",
+            "strong cardio",
+            "recent winning streak"
+          ],
+          "top_weaknesses": [
+            "below-average striking",
+            "weak takedown defense",
+            "limited finishing ability"
+          ],
+          "recent_form": "Belal Muhammad is on a five-fight winning streak, showcasing his ability to outpoint opponents consistently.",
+          "x_factors": [
+            "high fight IQ",
+            "strong cardio",
+            "recent momentum"
+          ]
+        },
+        "profile_b": {
+          "name": "Shavkat Rakhmonov",
+          "weight_class": "Welterweight",
+          "record": "19-0-0",
+          "style_label": "submission grappler",
+          "striking_grade": "above-average",
+          "grappling_grade": "elite",
+          "cardio_durability_grade": "above-average",
+          "top_strengths": [
+            "elite striking accuracy",
+            "strong submission game",
+            "excellent finishing rate"
+          ],
+          "top_weaknesses": [
+            "below-average striking defense"
+          ],
+          "recent_form": "Rakhmonov is on a five-fight finishing streak, showcasing his submission skills against high-level opponents.",
+          "x_factors": [
+            "high finishing rate",
+            "strong grappling IQ"
+          ]
+        },
+        "matchup": {
+          "advantages": [
+            {
+              "category": "striking",
+              "favored_fighter": "Shavkat Rakhmonov",
+              "magnitude": "clear",
+              "reasoning": "Rakhmonov has above-average striking with elite accuracy, while Muhammad's striking is below-average."
+            },
+            {
+              "category": "grappling",
+              "favored_fighter": "Shavkat Rakhmonov",
+              "magnitude": "clear",
+              "reasoning": "Rakhmonov possesses elite grappling skills, contrasting with Muhammad's weak grappling and takedown defense."
+            },
+            {
+              "category": "cardio_durability",
+              "favored_fighter": "even",
+              "magnitude": "even",
+              "reasoning": "Both fighters have average to above-average cardio, with Muhammad showing strong cardio and Rakhmonov having above-average durability."
+            },
+            {
+              "category": "physical",
+              "favored_fighter": "Shavkat Rakhmonov",
+              "magnitude": "clear",
+              "reasoning": "Rakhmonov's overall physicality and finishing ability give him a clear edge over Muhammad."
+            }
+          ],
+          "stylistic_clash": "A pressure striker like Muhammad will look to push the pace and outpoint Rakhmonov, while Rakhmonov's submission grappling style may force Muhammad to be cautious and defensive. The interaction between Muhammad's striking pressure and Rakhmonov's grappling threat will be crucial in determining the fight's flow.",
+          "key_factors": [
+            "Rakhmonov's elite grappling ability and submission threat",
+            "Muhammad's ability to manage distance and avoid takedowns",
+            "Rakhmonov's finishing rate and striking accuracy",
+            "Muhammad's fight IQ and ability to adapt during the fight"
+          ],
+          "predicted_winner": "Shavkat Rakhmonov",
+          "confidence": "high",
+          "prediction_rationale": "Shavkat Rakhmonov is favored due to his clear advantages in grappling and striking, which will likely overwhelm Muhammad's pressure striking style. Given Rakhmonov's elite finishing ability and Muhammad's weaknesses in grappling defense, I expect Rakhmonov to secure a victory, likely by submission."
+        }
+      },
+      "error": null
+    },
+    {
+      "case_id": "lhw-pereira-prochazka",
+      "fact_coverage": 0.6666666666666666,
+      "fact_hits": [
+        true,
+        true,
+        false
+      ],
+      "forbidden_clean": 1.0,
+      "forbidden_violations": [
+        false
+      ],
+      "judge_factual": 3,
+      "judge_advantages": 4,
+      "judge_calibration": 3,
+      "judge_reasoning": "The analysis contains some inaccuracies, particularly in the assessment of striking advantages. While it correctly identifies Prochazka's elite striking output, it overlooks Pereira's elite striking accuracy and previous knockout victory over Prochazka, which should be factored into the striking dynamic. The grappling advantages are correctly noted, as Prochazka has elite grappling skills compared to Pereira's weak grappling. The confidence level is high, but given the previous matchup results and Pereira's knockout power, a more nuanced approach would be appropriate, leading to a slightly lower calibration score.",
+      "aggregate": 0.7,
+      "response": {
+        "profile_a": {
+          "name": "Alex Pereira",
+          "weight_class": "Light Heavyweight",
+          "record": "13-3-0",
+          "style_label": "striking specialist",
+          "striking_grade": "average",
+          "grappling_grade": "weak",
+          "cardio_durability_grade": "average",
+          "top_strengths": [
+            "elite striking accuracy",
+            "powerful striker",
+            "effective in stand-up exchanges"
+          ],
+          "top_weaknesses": [
+            "below-average grappling",
+            "limited takedown attempts",
+            "average striking defense"
+          ],
+          "recent_form": "1 win in last 5 fights, with notable finishes but recent submission loss.",
+          "x_factors": [
+            "high knockout power",
+            "experience in high-stakes fights"
+          ]
+        },
+        "profile_b": {
+          "name": "Jiri Prochazka",
+          "weight_class": "Light Heavyweight",
+          "record": "31-5-1",
+          "style_label": "aggressive striker",
+          "striking_grade": "elite",
+          "grappling_grade": "elite",
+          "cardio_durability_grade": "average",
+          "top_strengths": [
+            "high output striking",
+            "elite submission attempts",
+            "strong finishing ability"
+          ],
+          "top_weaknesses": [
+            "poor takedown defense",
+            "absorbs too many strikes",
+            "average striking defense"
+          ],
+          "recent_form": "Split results in last five fights, with notable finishes and a recent win over a top contender.",
+          "x_factors": [
+            "high finishing rate",
+            "aggressive fighting style",
+            "recent rematch success"
+          ]
+        },
+        "matchup": {
+          "advantages": [
+            {
+              "category": "striking",
+              "favored_fighter": "Jiri Prochazka",
+              "magnitude": "clear",
+              "reasoning": "Prochazka's striking is graded elite, allowing him to maintain a high output and finishing ability compared to Pereira's average striking grade."
+            },
+            {
+              "category": "grappling",
+              "favored_fighter": "Jiri Prochazka",
+              "magnitude": "clear",
+              "reasoning": "Prochazka possesses elite grappling skills, while Pereira's grappling is weak, giving Prochazka a significant advantage in potential ground exchanges."
+            },
+            {
+              "category": "cardio_durability",
+              "favored_fighter": "even",
+              "magnitude": "even",
+              "reasoning": "Both fighters have average cardio and durability, making this category even."
+            },
+            {
+              "category": "physical",
+              "favored_fighter": "Jiri Prochazka",
+              "magnitude": "clear",
+              "reasoning": "Prochazka's aggressive style and finishing ability, combined with his experience in high-stakes fights, give him a physical edge over Pereira."
+            }
+          ],
+          "stylistic_clash": "This matchup features an aggressive striker in Prochazka against a striking specialist in Pereira. Prochazka's high output and finishing ability may pressure Pereira, who relies on effective stand-up exchanges but has shown weaknesses in grappling.",
+          "key_factors": [
+            "Prochazka's ability to manage distance and pressure Pereira effectively.",
+            "Pereira's striking accuracy and knockout power in stand-up exchanges.",
+            "Prochazka's grappling threat and submission attempts if the fight goes to the ground.",
+            "Cardio management for both fighters, especially in later rounds."
+          ],
+          "predicted_winner": "Jiri Prochazka",
+          "confidence": "high",
+          "prediction_rationale": "Jiri Prochazka has clear advantages in striking and grappling, with his elite striking output and finishing ability likely overwhelming Pereira. The stylistic clash favors Prochazka's aggressive approach, which could exploit Pereira's weaknesses, particularly in grappling."
+        }
+      },
+      "error": null
+    },
+    {
+      "case_id": "hw-jones-aspinall",
+      "fact_coverage": 1.0,
+      "fact_hits": [
+        true,
+        true,
+        true
+      ],
+      "forbidden_clean": 1.0,
+      "forbidden_violations": [
+        false
+      ],
+      "judge_factual": 3,
+      "judge_advantages": 4,
+      "judge_calibration": 3,
+      "judge_reasoning": "The analysis contains some inaccuracies, particularly in the striking category where it states Aspinall has a 'significant edge' over Jones, despite Jones having a higher striking defense and elite takedown defense which could mitigate Aspinall's striking volume. The advantages identified are mostly correct, but the analysis could better emphasize the impact of Jones' reach and age, which are crucial factors. The confidence level is high, but given the nuances of the matchup, it may be overly confident considering Aspinall's explosive potential and recent performance.",
+      "aggregate": 0.8333333333333334,
+      "response": {
+        "profile_a": {
+          "name": "Jon Jones",
+          "weight_class": "Heavyweight",
+          "record": "28-1-0",
+          "style_label": "well-rounded striker",
+          "striking_grade": "weak",
+          "grappling_grade": "above-average",
+          "cardio_durability_grade": "elite",
+          "top_strengths": [
+            "elite takedown defense",
+            "high striking defense",
+            "strong submission skills"
+          ],
+          "top_weaknesses": [
+            "low output striking",
+            "average striking accuracy"
+          ],
+          "recent_form": "Jon Jones is on a three-fight win streak with two finishes, showcasing his dominance in the heavyweight division.",
+          "x_factors": [
+            "high fight IQ",
+            "long reach",
+            "elite durability"
+          ]
+        },
+        "profile_b": {
+          "name": "Tom Aspinall",
+          "weight_class": "Heavyweight",
+          "record": "15-3-0",
+          "style_label": "submission grappler",
+          "striking_grade": "above-average",
+          "grappling_grade": "elite",
+          "cardio_durability_grade": "average",
+          "top_strengths": [
+            "high volume striker",
+            "elite submission skills",
+            "strong finishing rate"
+          ],
+          "top_weaknesses": [
+            "below-average striking defense",
+            "below-average takedown defense"
+          ],
+          "recent_form": "Aspinall is on a four-fight win streak, with three finishes in his last five bouts.",
+          "x_factors": [
+            "recent injury TKO loss",
+            "high fight IQ",
+            "quick finishing ability"
+          ]
+        },
+        "matchup": {
+          "advantages": [
+            {
+              "category": "striking",
+              "favored_fighter": "Tom Aspinall",
+              "magnitude": "clear",
+              "reasoning": "Aspinall's above-average striking and high volume output give him a significant edge over Jones' weak striking."
+            },
+            {
+              "category": "grappling",
+              "favored_fighter": "Jon Jones",
+              "magnitude": "clear",
+              "reasoning": "Jones possesses elite takedown defense and strong submission skills, which outmatch Aspinall's elite grappling."
+            },
+            {
+              "category": "cardio_durability",
+              "favored_fighter": "Jon Jones",
+              "magnitude": "clear",
+              "reasoning": "Jones has elite cardio and durability, allowing him to maintain a high level of performance throughout the fight."
+            },
+            {
+              "category": "physical",
+              "favored_fighter": "Jon Jones",
+              "magnitude": "clear",
+              "reasoning": "Jones' long reach and elite durability provide him a physical advantage over Aspinall."
+            }
+          ],
+          "stylistic_clash": "Jones' well-rounded striking and elite grappling skills will likely neutralize Aspinall's submission grappling, while Aspinall's high-volume striking could struggle against Jones' strong defense. This matchup presents a classic case of a versatile fighter facing a specialist, where Jones' ability to adapt will be crucial.",
+          "key_factors": [
+            "Jones' elite takedown defense against Aspinall's below-average takedown defense",
+            "Aspinall's striking volume versus Jones' striking defense",
+            "Jones' cardio and durability in the later rounds",
+            "Aspinall's finishing ability and how quickly he can capitalize on openings",
+            "Recent injury history of Aspinall affecting his performance"
+          ],
+          "predicted_winner": "Jon Jones",
+          "confidence": "high",
+          "prediction_rationale": "Jon Jones is favored due to his clear advantages in grappling, cardio, and physical attributes, which are critical in a heavyweight matchup. While Aspinall has a striking edge, Jones' elite takedown defense and durability will likely allow him to control the fight and avoid significant damage."
+        }
+      },
+      "error": null
+    },
+    {
+      "case_id": "hw-pavlovich-blaydes",
+      "fact_coverage": 1.0,
+      "fact_hits": [
+        true,
+        true,
+        true
+      ],
+      "forbidden_clean": 1.0,
+      "forbidden_violations": [
+        false
+      ],
+      "judge_factual": 4,
+      "judge_advantages": 5,
+      "judge_calibration": 3,
+      "judge_reasoning": "The analysis accurately reflects the fighters' strengths and weaknesses based on the input data, particularly highlighting Pavlovich's striking advantages and Blaydes' grappling prowess. However, it slightly overstates the confidence in Pavlovich's victory, given Blaydes' elite grappling skills and the potential for takedowns, which could significantly alter the fight dynamics. The analysis could benefit from a more nuanced view of the matchup's uncertainty.",
+      "aggregate": 0.9,
+      "response": {
+        "profile_a": {
+          "name": "Sergei Pavlovich",
+          "weight_class": "Heavyweight",
+          "record": "18-2-0",
+          "style_label": "power striker",
+          "striking_grade": "above-average",
+          "grappling_grade": "weak",
+          "cardio_durability_grade": "average",
+          "top_strengths": [
+            "high striking output",
+            "strong finishing ability",
+            "good striking accuracy"
+          ],
+          "top_weaknesses": [
+            "poor takedown defense",
+            "weak grappling",
+            "vulnerable to strikes"
+          ],
+          "recent_form": "Pavlovich is on a four-fight win streak, all by first or second-round finishes, but suffered a recent KO loss to Aspinall.",
+          "x_factors": [
+            "high knockout power",
+            "limited grappling skills",
+            "recent KO loss"
+          ]
+        },
+        "profile_b": {
+          "name": "Curtis Blaydes",
+          "weight_class": "Heavyweight",
+          "record": "18-4-0",
+          "style_label": "wrestling striker",
+          "striking_grade": "below-average",
+          "grappling_grade": "elite",
+          "cardio_durability_grade": "average",
+          "top_strengths": [
+            "elite takedown ability",
+            "strong grappling",
+            "good cardio"
+          ],
+          "top_weaknesses": [
+            "below-average striking accuracy",
+            "vulnerable to KOs",
+            "inconsistent striking defense"
+          ],
+          "recent_form": "1 win and 4 losses in the last 5 fights, with a notable TKO win over Almeida.",
+          "x_factors": [
+            "recent KO losses",
+            "high finishing rate in grappling",
+            "age-related decline potential"
+          ]
+        },
+        "matchup": {
+          "advantages": [
+            {
+              "category": "striking",
+              "favored_fighter": "Sergei Pavlovich",
+              "magnitude": "decisive",
+              "reasoning": "Pavlovich has above-average striking with high output and strong finishing ability, while Blaydes has below-average striking accuracy."
+            },
+            {
+              "category": "grappling",
+              "favored_fighter": "Curtis Blaydes",
+              "magnitude": "decisive",
+              "reasoning": "Blaydes possesses elite grappling skills and takedown ability, contrasting sharply with Pavlovich's weak grappling."
+            },
+            {
+              "category": "cardio_durability",
+              "favored_fighter": "even",
+              "magnitude": "even",
+              "reasoning": "Both fighters have average cardio and durability, making this category even."
+            },
+            {
+              "category": "physical",
+              "favored_fighter": "Sergei Pavlovich",
+              "magnitude": "decisive",
+              "reasoning": "Pavlovich's power striking and finishing ability give him a significant physical advantage over Blaydes."
+            }
+          ],
+          "stylistic_clash": "Pavlovich's power striking style will look to keep the fight standing, while Blaydes, a wrestling striker, will aim to close the distance and utilize his elite grappling to control the fight. This clash creates a dynamic where Pavlovich's striking output will be tested against Blaydes' takedown threat.",
+          "key_factors": [
+            "Takedown threat from Blaydes",
+            "Pavlovich's ability to keep the fight standing",
+            "Striking accuracy of both fighters",
+            "Recent knockout losses affecting fighter confidence",
+            "Finishing ability in grappling versus striking"
+          ],
+          "predicted_winner": "Sergei Pavlovich",
+          "confidence": "high",
+          "prediction_rationale": "Pavlovich's decisive advantage in striking, with his high output and finishing ability, positions him well against Blaydes, who has struggled with striking accuracy. While Blaydes has elite grappling, Pavlovich's power and ability to keep the fight standing are likely to overwhelm him, especially given Blaydes' recent KO losses."
+        }
+      },
+      "error": null
+    },
+    {
+      "case_id": "bw-omalley-dvalishvili",
+      "fact_coverage": 0.6666666666666666,
+      "fact_hits": [
+        true,
+        true,
+        false
+      ],
+      "forbidden_clean": 1.0,
+      "forbidden_violations": [
+        false
+      ],
+      "judge_factual": 5,
+      "judge_advantages": 5,
+      "judge_calibration": 4,
+      "judge_reasoning": "The analysis accurately reflects the fighters' stats and strengths, correctly identifying O'Malley's elite striking accuracy and defense as advantages in striking, while also highlighting Dvalishvili's decisive grappling advantage due to his elite takedown volume. The mention of cardio durability being even is appropriate given both fighters' profiles. However, the confidence level of 'high' may be slightly overstated; while Dvalishvili has clear advantages, O'Malley's striking could pose a significant threat, suggesting a more moderate confidence would be appropriate.",
+      "aggregate": 0.8333333333333334,
+      "response": {
+        "profile_a": {
+          "name": "Sean O'Malley",
+          "weight_class": "Bantamweight",
+          "record": "18-3-0",
+          "style_label": "striking specialist",
+          "striking_grade": "average",
+          "grappling_grade": "weak",
+          "cardio_durability_grade": "elite",
+          "top_strengths": [
+            "elite striking accuracy",
+            "elite striking defense",
+            "good takedown defense"
+          ],
+          "top_weaknesses": [
+            "weak grappling",
+            "low takedown attempts",
+            "absorbed strikes per minute"
+          ],
+          "recent_form": "1-4 in last 5 fights, with notable losses to Merab Dvalishvili and a recent KO win over Aljamain Sterling.",
+          "x_factors": [
+            "switch stance",
+            "high fight IQ",
+            "recent losses may impact confidence"
+          ]
+        },
+        "profile_b": {
+          "name": "Merab Dvalishvili",
+          "weight_class": "Bantamweight",
+          "record": "18-4-0",
+          "style_label": "pressure wrestler",
+          "striking_grade": "below-average",
+          "grappling_grade": "elite",
+          "cardio_durability_grade": "above-average",
+          "top_strengths": [
+            "elite takedown volume",
+            "strong striking defense",
+            "high durability"
+          ],
+          "top_weaknesses": [
+            "below-average striking output",
+            "weak takedown defense",
+            "limited submission threat"
+          ],
+          "recent_form": "Merab is on a five-fight winning streak, showcasing dominant performances against top competition.",
+          "x_factors": [
+            "high pace",
+            "excellent cardio",
+            "recent win over a champion"
+          ]
+        },
+        "matchup": {
+          "advantages": [
+            {
+              "category": "striking",
+              "favored_fighter": "Sean O'Malley",
+              "magnitude": "clear",
+              "reasoning": "O'Malley has elite striking accuracy and defense, while Dvalishvili's striking is below-average."
+            },
+            {
+              "category": "grappling",
+              "favored_fighter": "Merab Dvalishvili",
+              "magnitude": "decisive",
+              "reasoning": "Dvalishvili's elite grappling and takedown volume far surpass O'Malley's weak grappling."
+            },
+            {
+              "category": "cardio_durability",
+              "favored_fighter": "even",
+              "magnitude": "even",
+              "reasoning": "Both fighters display strong cardio, with O'Malley having elite durability and Dvalishvili showing above-average endurance."
+            },
+            {
+              "category": "physical",
+              "favored_fighter": "Merab Dvalishvili",
+              "magnitude": "decisive",
+              "reasoning": "Dvalishvili's high pace and durability give him a significant physical advantage over O'Malley."
+            }
+          ],
+          "stylistic_clash": "O'Malley, as a striking specialist, will look to keep the fight standing and utilize his striking accuracy against Dvalishvili's pressure wrestling style. Dvalishvili will aim to close the distance and implement his grappling to neutralize O'Malley's striking game.",
+          "key_factors": [
+            "Takedown threat from Dvalishvili",
+            "O'Malley's striking defense against pressure",
+            "Cardio management for both fighters",
+            "O'Malley's ability to keep the fight standing",
+            "Dvalishvili's striking output under pressure"
+          ],
+          "predicted_winner": "Merab Dvalishvili",
+          "confidence": "high",
+          "prediction_rationale": "Dvalishvili's decisive advantage in grappling and physicality, combined with his elite takedown volume, positions him well against O'Malley. While O'Malley has clear striking advantages, Dvalishvili's pressure and ability to grapple effectively will likely overwhelm O'Malley over the course of the fight."
+        }
+      },
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "description": "Labeled matchup cases for evaluating the Fight Night Matchup pipeline. Each case has facts the analysis MUST surface (must_mention, keyword OR-groups), claims it MUST NOT make (must_not_claim), and free-text notes describing what an ideal analysis looks like.",
+  "cases": [
+    {
+      "id": "lw-makhachev-gaethje",
+      "fighter_a": "Islam Makhachev",
+      "fighter_b": "Justin Gaethje",
+      "weight_class": "Lightweight",
+      "must_mention": [
+        ["takedown", "wrestling", "ground"],
+        ["striking", "stand-up", "kickboxing", "kicks", "boxing"],
+        ["Gaethje", "Highlight"],
+        ["takedown defense", "td def", "stuff", "sprawl"]
+      ],
+      "must_not_claim": [
+        ["Gaethje wrestles", "Gaethje will take", "Gaethje takedown offense"]
+      ],
+      "notes": "Classic wrestler-vs-striker. Makhachev's elite takedowns vs Gaethje's elite TD defense (90%) but high strikes-absorbed should be the central tension. An ideal analysis frames the fight as 'can Islam get Gaethje down', not 'can Gaethje out-wrestle Islam'."
+    },
+    {
+      "id": "lw-oliveira-tsarukyan",
+      "fighter_a": "Charles Oliveira",
+      "fighter_b": "Arman Tsarukyan",
+      "weight_class": "Lightweight",
+      "must_mention": [
+        ["submission", "BJJ", "jiu-jitsu", "ground game"],
+        ["Tsarukyan", "Arman"],
+        ["wrestling", "takedown"]
+      ],
+      "must_not_claim": [
+        ["Oliveira has elite takedown defense"]
+      ],
+      "notes": "Oliveira is the all-time UFC submissions leader but has porous TD defense (~53%). Tsarukyan is a top wrestler. Analysis should identify Oliveira's sub threat from his back AND his vulnerability to being grinded."
+    },
+    {
+      "id": "lw-mcgregor-poirier",
+      "fighter_a": "Conor McGregor",
+      "fighter_b": "Dustin Poirier",
+      "weight_class": "Lightweight",
+      "must_mention": [
+        ["layoff", "inactivity", "ring rust", "long absence", "out of action", "long time", "years"],
+        ["Poirier", "Diamond"],
+        ["southpaw", "left hand", "left straight", "stance"]
+      ],
+      "must_not_claim": [
+        ["McGregor is on a win streak", "McGregor recently won"]
+      ],
+      "notes": "McGregor's recent form is ALL losses (last 3 fights). Analysis should weight Poirier's recent form heavily. Both southpaws — stance is not a factor."
+    },
+    {
+      "id": "fw-holloway-rodriguez",
+      "fighter_a": "Max Holloway",
+      "fighter_b": "Yair Rodriguez",
+      "weight_class": "Featherweight",
+      "must_mention": [
+        ["volume", "pace", "output", "7.2", "high-volume"],
+        ["Holloway", "Blessed"],
+        ["unorthodox", "creative", "kicks"]
+      ],
+      "must_not_claim": [
+        ["Rodriguez has higher striking volume than Holloway"]
+      ],
+      "notes": "Holloway is the highest-volume striker in UFC history (~7.2 SLpM). Rodriguez is creative/unorthodox but lower volume. Analysis should pick up the volume gap as a striking advantage for Holloway."
+    },
+    {
+      "id": "fw-volkanovski-topuria",
+      "fighter_a": "Alexander Volkanovski",
+      "fighter_b": "Ilia Topuria",
+      "weight_class": "Featherweight",
+      "must_mention": [
+        ["Topuria", "Matador"],
+        ["recent loss", "coming off", "knockout loss", "KO loss", "back-to-back losses", "two losses"],
+        ["power", "knockout", "finishing"]
+      ],
+      "must_not_claim": [
+        ["Volkanovski is undefeated", "Volkanovski has never been knocked out"]
+      ],
+      "notes": "Volk is coming off back-to-back KO losses (Topuria + Makhachev). Topuria's last five are all wins including KOing Volk. Recent-form weighting should pick this up."
+    },
+    {
+      "id": "mw-adesanya-strickland",
+      "fighter_a": "Israel Adesanya",
+      "fighter_b": "Sean Strickland",
+      "weight_class": "Middleweight",
+      "must_mention": [
+        ["Strickland", "Tarzan"],
+        ["volume", "high output", "pace", "6.2"],
+        ["striking defense", "defensive", "Philly shell", "high guard"]
+      ],
+      "must_not_claim": [
+        ["Strickland has knockout power", "Strickland has heavy hands"]
+      ],
+      "notes": "Strickland's high-volume jab + tight defense gave Adesanya trouble historically. Strickland is famously light-handed despite high volume."
+    },
+    {
+      "id": "mw-chimaev-whittaker",
+      "fighter_a": "Khamzat Chimaev",
+      "fighter_b": "Robert Whittaker",
+      "weight_class": "Middleweight",
+      "must_mention": [
+        ["takedown", "wrestling", "grappling"],
+        ["Whittaker", "Reaper"],
+        ["takedown defense", "TD def", "85%"]
+      ],
+      "must_not_claim": [
+        ["Whittaker is a wrestler", "Whittaker wants the fight on the ground"]
+      ],
+      "notes": "Chimaev's elite wrestling vs Whittaker's elite TD defense (85%) is the central question. Whittaker is a technical striker, NOT a wrestler."
+    },
+    {
+      "id": "ww-belal-rakhmonov",
+      "fighter_a": "Belal Muhammad",
+      "fighter_b": "Shavkat Rakhmonov",
+      "weight_class": "Welterweight",
+      "must_mention": [
+        ["Rakhmonov", "Nomad", "Shavkat"],
+        ["finishing", "finish", "undefeated", "every fight"],
+        ["pace", "pressure", "cardio"]
+      ],
+      "must_not_claim": [
+        ["Belal has more knockouts", "Belal is a finisher"]
+      ],
+      "notes": "Rakhmonov has finished every UFC opponent. Belal is durable but doesn't finish. Analysis should frame Rakhmonov's finishing rate vs Belal's grind-it-out style."
+    },
+    {
+      "id": "lhw-pereira-prochazka",
+      "fighter_a": "Alex Pereira",
+      "fighter_b": "Jiri Prochazka",
+      "weight_class": "Light Heavyweight",
+      "must_mention": [
+        ["Pereira", "Poatan"],
+        ["power", "knockout", "left hook"],
+        ["unorthodox", "wild", "unpredictable", "movement"]
+      ],
+      "must_not_claim": [
+        ["Pereira has elite wrestling", "Pereira is a grappler"]
+      ],
+      "notes": "Pereira's power kickboxing vs Prochazka's unorthodox/wild style. Pereira already KO'd Prochazka in their first fight."
+    },
+    {
+      "id": "hw-jones-aspinall",
+      "fighter_a": "Jon Jones",
+      "fighter_b": "Tom Aspinall",
+      "weight_class": "Heavyweight",
+      "must_mention": [
+        ["Aspinall", "Tom"],
+        ["age", "younger", "older", "generational", "youth", "38"],
+        ["reach", "84", "wingspan"]
+      ],
+      "must_not_claim": [
+        ["Aspinall is older than Jones", "Jones has a height disadvantage"]
+      ],
+      "notes": "Jones is 38 with a massive reach (84.5\"); Aspinall is 33 and one of the most explosive HWs ever. Age gap and Jones's reach are the dominant variables."
+    },
+    {
+      "id": "hw-pavlovich-blaydes",
+      "fighter_a": "Sergei Pavlovich",
+      "fighter_b": "Curtis Blaydes",
+      "weight_class": "Heavyweight",
+      "must_mention": [
+        ["Blaydes", "Curtis"],
+        ["wrestling", "takedown", "ground"],
+        ["power", "knockout", "Pavlovich's striking", "heavy hands"]
+      ],
+      "must_not_claim": [
+        ["Pavlovich is a wrestler", "Pavlovich has takedown offense"]
+      ],
+      "notes": "Pavlovich is a pure puncher with zero takedown attempts; Blaydes is one of the best HW wrestlers ever. Wrestling-vs-striking is the entire fight."
+    },
+    {
+      "id": "bw-omalley-dvalishvili",
+      "fighter_a": "Sean O'Malley",
+      "fighter_b": "Merab Dvalishvili",
+      "weight_class": "Bantamweight",
+      "must_mention": [
+        ["Dvalishvili", "Merab", "Machine"],
+        ["takedown", "wrestling", "6.5", "pace"],
+        ["reach", "five inches", "5 inches", "range"]
+      ],
+      "must_not_claim": [
+        ["O'Malley has the wrestling advantage", "O'Malley has elite takedowns"]
+      ],
+      "notes": "Merab averages 6.5 TDs per 15 min — one of the highest rates in UFC history. O'Malley has a 5-inch reach advantage but Merab's pace and wrestling dictate the fight."
+    }
+  ]
+}

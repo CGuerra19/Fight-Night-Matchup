@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fight Night Matchup</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <header>
+    <h1>Fight Night Matchup</h1>
+    <p class="tagline">
+      Pick two UFC fighters and get an AI-distilled matchup breakdown.
+    </p>
+  </header>
+
+  <main>
+    <form id="matchup-form" autocomplete="off">
+      <div class="inputs">
+        <div class="fighter-input">
+          <label for="fighter-a">Fighter A</label>
+          <input type="text" id="fighter-a" name="fighter_a" placeholder="e.g. Islam Makhachev" required />
+          <ul class="suggestions" id="suggestions-a" hidden></ul>
+        </div>
+        <div class="vs">vs</div>
+        <div class="fighter-input">
+          <label for="fighter-b">Fighter B</label>
+          <input type="text" id="fighter-b" name="fighter_b" placeholder="e.g. Charles Oliveira" required />
+          <ul class="suggestions" id="suggestions-b" hidden></ul>
+        </div>
+      </div>
+      <button type="submit" id="submit-btn">Analyze Matchup</button>
+    </form>
+
+    <div id="loading" hidden>
+      <div class="spinner"></div>
+      <p>Distilling profiles and running matchup analysis…</p>
+    </div>
+
+    <div id="error" class="error-banner" hidden></div>
+
+    <section id="results" hidden>
+      <div class="profiles">
+        <article class="profile" id="profile-a"></article>
+        <article class="profile" id="profile-b"></article>
+      </div>
+      <article class="matchup" id="matchup"></article>
+    </section>
+  </main>
+
+  <footer>
+    <p>{{ snapshot_note }}</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
