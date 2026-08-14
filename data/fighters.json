@@ -1,5 +1,5 @@
 {
-  "snapshot_note": "UFC fighter stats updated to reflect records and results through early 2025. Sourced from publicly available career statistics (ufcstats.com, ufc.com). Stats are approximations for demo purposes.",
+  "snapshot_note": "UFC fighter stats updated through August 2026. Includes results from UFC Freedom 250, UFC 329, and UFC 330 card. Sourced from publicly available career statistics (ufcstats.com, ufc.com, espn.com). Stats are approximations for demo purposes.",
   "fighters": [
     {
       "name": "Jon Jones",
@@ -18,7 +18,13 @@
       "td_acc_pct": 47,
       "td_def_pct": 95,
       "sub_avg_per15": 0.5,
-      "last_5": ["W vs Stipe Miocic (TKO R3)", "W vs Ciryl Gane (SUB R1)", "W vs Dominick Reyes (UD)", "W vs Thiago Santos (SD)", "W vs Anthony Smith (UD)"]
+      "last_5": [
+        "W vs Stipe Miocic (TKO R3)",
+        "W vs Ciryl Gane (SUB R1)",
+        "W vs Dominick Reyes (UD)",
+        "W vs Thiago Santos (SD)",
+        "W vs Anthony Smith (UD)"
+      ]
     },
     {
       "name": "Tom Aspinall",
@@ -37,13 +43,19 @@
       "td_acc_pct": 33,
       "td_def_pct": 50,
       "sub_avg_per15": 1.2,
-      "last_5": ["W vs Jon Jones (awarded title, Jones retired)", "W vs Sergei Pavlovich (KO R1)", "W vs Marcin Tybura (KO R1)", "L vs Curtis Blaydes (TKO R1, injury)", "W vs Alexander Volkov (SUB R1)"]
+      "last_5": [
+        "W vs Jon Jones (awarded title, Jones retired)",
+        "W vs Sergei Pavlovich (KO R1)",
+        "W vs Marcin Tybura (KO R1)",
+        "L vs Curtis Blaydes (TKO R1, injury)",
+        "W vs Alexander Volkov (SUB R1)"
+      ]
     },
     {
       "name": "Ciryl Gane",
       "nickname": "Bon Gamin",
       "weight_class": "Heavyweight",
-      "record": "13-3-0",
+      "record": "14-3-0",
       "stance": "Orthodox",
       "height_in": 76,
       "reach_in": 81,
@@ -56,7 +68,13 @@
       "td_acc_pct": 28,
       "td_def_pct": 64,
       "sub_avg_per15": 0.3,
-      "last_5": ["W vs Alexander Volkov (UD)", "L vs Jon Jones (SUB R1)", "W vs Serghei Spivac (TKO R2)", "L vs Francis Ngannou (UD)", "W vs Tai Tuivasa (TKO R3)"]
+      "last_5": [
+        "W vs Alex Pereira (TKO R2)",
+        "W vs Alexander Volkov (UD)",
+        "L vs Jon Jones (SUB R1)",
+        "W vs Serghei Spivac (TKO R2)",
+        "L vs Francis Ngannou (UD)"
+      ]
     },
     {
       "name": "Sergei Pavlovich",
@@ -75,7 +93,13 @@
       "td_acc_pct": 0,
       "td_def_pct": 50,
       "sub_avg_per15": 0.0,
-      "last_5": ["L vs Tom Aspinall (KO R1)", "W vs Curtis Blaydes (KO R1)", "W vs Tai Tuivasa (KO R1)", "W vs Derrick Lewis (KO R1)", "W vs Shamil Abdurakhimov (TKO R2)"]
+      "last_5": [
+        "L vs Tom Aspinall (KO R1)",
+        "W vs Curtis Blaydes (KO R1)",
+        "W vs Tai Tuivasa (KO R1)",
+        "W vs Derrick Lewis (KO R1)",
+        "W vs Shamil Abdurakhimov (TKO R2)"
+      ]
     },
     {
       "name": "Curtis Blaydes",
@@ -94,7 +118,13 @@
       "td_acc_pct": 49,
       "td_def_pct": 70,
       "sub_avg_per15": 0.2,
-      "last_5": ["W vs Jailton Almeida (TKO R2)", "L vs Sergei Pavlovich (KO R1)", "W vs Tom Aspinall (TKO R1)", "L vs Tom Aspinall (rescheduled)", "L vs Derrick Lewis (KO R2)"]
+      "last_5": [
+        "W vs Jailton Almeida (TKO R2)",
+        "L vs Sergei Pavlovich (KO R1)",
+        "W vs Tom Aspinall (TKO R1)",
+        "L vs Tom Aspinall (rescheduled)",
+        "L vs Derrick Lewis (KO R2)"
+      ]
     },
     {
       "name": "Stipe Miocic",
@@ -113,13 +143,19 @@
       "td_acc_pct": 36,
       "td_def_pct": 67,
       "sub_avg_per15": 0.2,
-      "last_5": ["L vs Jon Jones (TKO R3)", "L vs Francis Ngannou (KO R2)", "W vs Daniel Cormier (KO R4)", "W vs Daniel Cormier (TKO R4)", "L vs Daniel Cormier (KO R1)"]
+      "last_5": [
+        "L vs Jon Jones (TKO R3)",
+        "L vs Francis Ngannou (KO R2)",
+        "W vs Daniel Cormier (KO R4)",
+        "W vs Daniel Cormier (TKO R4)",
+        "L vs Daniel Cormier (KO R1)"
+      ]
     },
     {
       "name": "Alex Pereira",
       "nickname": "Poatan",
-      "weight_class": "Light Heavyweight",
-      "record": "13-3-0",
+      "weight_class": "Heavyweight",
+      "record": "13-4-0",
       "stance": "Orthodox",
       "height_in": 76,
       "reach_in": 79,
@@ -132,7 +168,13 @@
       "td_acc_pct": 0,
       "td_def_pct": 76,
       "sub_avg_per15": 0.0,
-      "last_5": ["L vs Jiri Prochazka (SUB R5)", "W vs Jiri Prochazka (TKO R2)", "W vs Jamahal Hill (KO R1)", "W vs Jiri Prochazka (TKO R2)", "L vs Israel Adesanya (KO R2)"]
+      "last_5": [
+        "L vs Ciryl Gane (TKO R2)",
+        "L vs Jiri Prochazka (SUB R5)",
+        "W vs Jiri Prochazka (TKO R2)",
+        "W vs Jamahal Hill (KO R1)",
+        "W vs Jiri Prochazka (TKO R2)"
+      ]
     },
     {
       "name": "Jamahal Hill",
@@ -151,7 +193,13 @@
       "td_acc_pct": 0,
       "td_def_pct": 90,
       "sub_avg_per15": 0.0,
-      "last_5": ["L vs Alex Pereira (KO R1)", "W vs Glover Teixeira (UD)", "W vs Thiago Santos (UD)", "W vs Johnny Walker (TKO R1)", "L vs Paul Craig (SUB R1)"]
+      "last_5": [
+        "L vs Alex Pereira (KO R1)",
+        "W vs Glover Teixeira (UD)",
+        "W vs Thiago Santos (UD)",
+        "W vs Johnny Walker (TKO R1)",
+        "L vs Paul Craig (SUB R1)"
+      ]
     },
     {
       "name": "Jiri Prochazka",
@@ -170,7 +218,13 @@
       "td_acc_pct": 50,
       "td_def_pct": 67,
       "sub_avg_per15": 0.5,
-      "last_5": ["W vs Alex Pereira (SUB R5)", "L vs Alex Pereira (TKO R2)", "W vs Alex Pereira (TKO R2, rematch)", "L vs Alex Pereira (TKO R2)", "W vs Glover Teixeira (SUB R5)"]
+      "last_5": [
+        "W vs Alex Pereira (SUB R5)",
+        "L vs Alex Pereira (TKO R2)",
+        "W vs Alex Pereira (TKO R2, rematch)",
+        "L vs Alex Pereira (TKO R2)",
+        "W vs Glover Teixeira (SUB R5)"
+      ]
     },
     {
       "name": "Magomed Ankalaev",
@@ -189,7 +243,13 @@
       "td_acc_pct": 55,
       "td_def_pct": 76,
       "sub_avg_per15": 0.3,
-      "last_5": ["W vs Aleksandar Rakic (UD)", "D vs Jan Blachowicz (split draw)", "W vs Johnny Walker (TKO R2)", "W vs Anthony Smith (UD)", "W vs Volkan Oezdemir (UD)"]
+      "last_5": [
+        "W vs Aleksandar Rakic (UD)",
+        "D vs Jan Blachowicz (split draw)",
+        "W vs Johnny Walker (TKO R2)",
+        "W vs Anthony Smith (UD)",
+        "W vs Volkan Oezdemir (UD)"
+      ]
     },
     {
       "name": "Dricus du Plessis",
@@ -208,7 +268,13 @@
       "td_acc_pct": 32,
       "td_def_pct": 64,
       "sub_avg_per15": 0.8,
-      "last_5": ["W vs Israel Adesanya (UD)", "W vs Sean Strickland (SD)", "W vs Robert Whittaker (TKO R2)", "W vs Derek Brunson (TKO R2)", "W vs Darren Till (SUB R3)"]
+      "last_5": [
+        "W vs Israel Adesanya (UD)",
+        "W vs Sean Strickland (SD)",
+        "W vs Robert Whittaker (TKO R2)",
+        "W vs Derek Brunson (TKO R2)",
+        "W vs Darren Till (SUB R3)"
+      ]
     },
     {
       "name": "Sean Strickland",
@@ -227,7 +293,13 @@
       "td_acc_pct": 25,
       "td_def_pct": 82,
       "sub_avg_per15": 0.4,
-      "last_5": ["W vs Paulo Costa (UD)", "L vs Dricus du Plessis (SD)", "W vs Israel Adesanya (UD)", "W vs Abus Magomedov (TKO R1)", "W vs Nassourdine Imavov (UD)"]
+      "last_5": [
+        "W vs Paulo Costa (UD)",
+        "L vs Dricus du Plessis (SD)",
+        "W vs Israel Adesanya (UD)",
+        "W vs Abus Magomedov (TKO R1)",
+        "W vs Nassourdine Imavov (UD)"
+      ]
     },
     {
       "name": "Israel Adesanya",
@@ -246,13 +318,19 @@
       "td_acc_pct": 0,
       "td_def_pct": 78,
       "sub_avg_per15": 0.2,
-      "last_5": ["L vs Dricus du Plessis (UD)", "L vs Sean Strickland (UD)", "W vs Alex Pereira (KO R2)", "L vs Alex Pereira (TKO R5)", "W vs Jared Cannonier (UD)"]
+      "last_5": [
+        "L vs Dricus du Plessis (UD)",
+        "L vs Sean Strickland (UD)",
+        "W vs Alex Pereira (KO R2)",
+        "L vs Alex Pereira (TKO R5)",
+        "W vs Jared Cannonier (UD)"
+      ]
     },
     {
       "name": "Robert Whittaker",
       "nickname": "The Reaper",
-      "weight_class": "Middleweight",
-      "record": "26-8-0",
+      "weight_class": "Light Heavyweight",
+      "record": "27-8-0",
       "stance": "Orthodox",
       "height_in": 72,
       "reach_in": 73.5,
@@ -265,7 +343,13 @@
       "td_acc_pct": 34,
       "td_def_pct": 85,
       "sub_avg_per15": 0.3,
-      "last_5": ["L vs Khamzat Chimaev (UD)", "L vs Dricus du Plessis (TKO R2)", "W vs Paulo Costa (UD)", "L vs Israel Adesanya (UD)", "W vs Marvin Vettori (UD)"]
+      "last_5": [
+        "W vs Nikita Krylov (TKO R3)",
+        "L vs Khamzat Chimaev (UD)",
+        "L vs Dricus du Plessis (TKO R2)",
+        "W vs Paulo Costa (UD)",
+        "L vs Israel Adesanya (UD)"
+      ]
     },
     {
       "name": "Khamzat Chimaev",
@@ -284,7 +368,13 @@
       "td_acc_pct": 65,
       "td_def_pct": 80,
       "sub_avg_per15": 1.0,
-      "last_5": ["W vs Robert Whittaker (UD)", "W vs Kamaru Usman (UD)", "W vs Kevin Holland (SUB R1)", "W vs Gilbert Burns (UD)", "W vs Li Jingliang (SUB R1)"]
+      "last_5": [
+        "W vs Robert Whittaker (UD)",
+        "W vs Kamaru Usman (UD)",
+        "W vs Kevin Holland (SUB R1)",
+        "W vs Gilbert Burns (UD)",
+        "W vs Li Jingliang (SUB R1)"
+      ]
     },
     {
       "name": "Paulo Costa",
@@ -303,7 +393,13 @@
       "td_acc_pct": 0,
       "td_def_pct": 71,
       "sub_avg_per15": 0.0,
-      "last_5": ["L vs Robert Whittaker (UD)", "W vs Luke Rockhold (UD)", "L vs Marvin Vettori (UD)", "L vs Israel Adesanya (TKO R2)", "W vs Yoel Romero (UD)"]
+      "last_5": [
+        "L vs Robert Whittaker (UD)",
+        "W vs Luke Rockhold (UD)",
+        "L vs Marvin Vettori (UD)",
+        "L vs Israel Adesanya (TKO R2)",
+        "W vs Yoel Romero (UD)"
+      ]
     },
     {
       "name": "Leon Edwards",
@@ -322,7 +418,13 @@
       "td_acc_pct": 42,
       "td_def_pct": 64,
       "sub_avg_per15": 0.5,
-      "last_5": ["L vs Belal Muhammad (UD)", "W vs Colby Covington (UD)", "W vs Kamaru Usman (UD)", "W vs Kamaru Usman (KO R5)", "W vs Nate Diaz (UD)"]
+      "last_5": [
+        "L vs Belal Muhammad (UD)",
+        "W vs Colby Covington (UD)",
+        "W vs Kamaru Usman (UD)",
+        "W vs Kamaru Usman (KO R5)",
+        "W vs Nate Diaz (UD)"
+      ]
     },
     {
       "name": "Kamaru Usman",
@@ -341,7 +443,13 @@
       "td_acc_pct": 47,
       "td_def_pct": 96,
       "sub_avg_per15": 0.3,
-      "last_5": ["L vs Khamzat Chimaev (UD)", "L vs Leon Edwards (UD)", "L vs Leon Edwards (KO R5)", "W vs Colby Covington (UD)", "W vs Gilbert Burns (TKO R3)"]
+      "last_5": [
+        "L vs Khamzat Chimaev (UD)",
+        "L vs Leon Edwards (UD)",
+        "L vs Leon Edwards (KO R5)",
+        "W vs Colby Covington (UD)",
+        "W vs Gilbert Burns (TKO R3)"
+      ]
     },
     {
       "name": "Belal Muhammad",
@@ -360,7 +468,13 @@
       "td_acc_pct": 38,
       "td_def_pct": 60,
       "sub_avg_per15": 0.3,
-      "last_5": ["W vs Leon Edwards (UD)", "W vs Gilbert Burns (UD)", "W vs Vicente Luque (UD)", "W vs Sean Brady (TKO R2)", "W vs Demian Maia (UD)"]
+      "last_5": [
+        "W vs Leon Edwards (UD)",
+        "W vs Gilbert Burns (UD)",
+        "W vs Vicente Luque (UD)",
+        "W vs Sean Brady (TKO R2)",
+        "W vs Demian Maia (UD)"
+      ]
     },
     {
       "name": "Shavkat Rakhmonov",
@@ -379,7 +493,13 @@
       "td_acc_pct": 60,
       "td_def_pct": 75,
       "sub_avg_per15": 2.5,
-      "last_5": ["W vs Ian Garry (SUB R3)", "W vs Stephen Thompson (SUB R4)", "W vs Geoff Neal (SUB R3)", "W vs Neil Magny (SUB R2)", "W vs Carlston Harris (KO R2)"]
+      "last_5": [
+        "W vs Ian Garry (SUB R3)",
+        "W vs Stephen Thompson (SUB R4)",
+        "W vs Geoff Neal (SUB R3)",
+        "W vs Neil Magny (SUB R2)",
+        "W vs Carlston Harris (KO R2)"
+      ]
     },
     {
       "name": "Colby Covington",
@@ -398,17 +518,23 @@
       "td_acc_pct": 35,
       "td_def_pct": 80,
       "sub_avg_per15": 0.3,
-      "last_5": ["L vs Leon Edwards (UD)", "W vs Jorge Masvidal (UD)", "L vs Kamaru Usman (UD)", "W vs Tyron Woodley (TKO R5)", "L vs Kamaru Usman (TKO R5)"]
+      "last_5": [
+        "L vs Leon Edwards (UD)",
+        "W vs Jorge Masvidal (UD)",
+        "L vs Kamaru Usman (UD)",
+        "W vs Tyron Woodley (TKO R5)",
+        "L vs Kamaru Usman (TKO R5)"
+      ]
     },
     {
-      "name": "Ian Garry",
+      "name": "Ian Machado Garry",
       "nickname": "The Future",
       "weight_class": "Welterweight",
       "record": "15-1-0",
       "stance": "Orthodox",
       "height_in": 74,
       "reach_in": 76,
-      "age": 27,
+      "age": 28,
       "slpm": 4.0,
       "str_acc_pct": 50,
       "sapm": 2.5,
@@ -417,17 +543,23 @@
       "td_acc_pct": 0,
       "td_def_pct": 75,
       "sub_avg_per15": 0.1,
-      "last_5": ["L vs Shavkat Rakhmonov (SUB R3)", "W vs Geoff Neal (UD)", "W vs Neil Magny (UD)", "W vs Daniel Rodriguez (UD)", "W vs Song Kenan (TKO R2)"]
+      "last_5": [
+        "L vs Shavkat Rakhmonov (SUB R3)",
+        "W vs Geoff Neal (UD)",
+        "W vs Neil Magny (UD)",
+        "W vs Daniel Rodriguez (UD)",
+        "W vs Song Kenan (TKO R2)"
+      ]
     },
     {
       "name": "Islam Makhachev",
       "nickname": "",
-      "weight_class": "Lightweight",
-      "record": "26-1-0",
+      "weight_class": "Welterweight",
+      "record": "27-1-0",
       "stance": "Southpaw",
       "height_in": 70,
       "reach_in": 70,
-      "age": 33,
+      "age": 34,
       "slpm": 3.0,
       "str_acc_pct": 59,
       "sapm": 1.4,
@@ -436,7 +568,13 @@
       "td_acc_pct": 65,
       "td_def_pct": 80,
       "sub_avg_per15": 1.2,
-      "last_5": ["L vs Arman Tsarukyan (UD)", "W vs Dustin Poirier (SUB R5)", "W vs Alexander Volkanovski (KO R1)", "W vs Alexander Volkanovski (UD)", "W vs Charles Oliveira (SUB R2)"]
+      "last_5": [
+        "W vs Jack Della Maddalena (UD)",
+        "L vs Arman Tsarukyan (UD)",
+        "W vs Dustin Poirier (SUB R5)",
+        "W vs Alexander Volkanovski (KO R1)",
+        "W vs Alexander Volkanovski (UD)"
+      ]
     },
     {
       "name": "Charles Oliveira",
@@ -455,7 +593,13 @@
       "td_acc_pct": 39,
       "td_def_pct": 53,
       "sub_avg_per15": 3.0,
-      "last_5": ["W vs Michael Chandler (KO R1)", "W vs Beneil Dariush (KO R1)", "L vs Islam Makhachev (SUB R2)", "W vs Justin Gaethje (SUB R1)", "W vs Dustin Poirier (SUB R3)"]
+      "last_5": [
+        "W vs Michael Chandler (KO R1)",
+        "W vs Beneil Dariush (KO R1)",
+        "L vs Islam Makhachev (SUB R2)",
+        "W vs Justin Gaethje (SUB R1)",
+        "W vs Dustin Poirier (SUB R3)"
+      ]
     },
     {
       "name": "Dustin Poirier",
@@ -474,17 +618,23 @@
       "td_acc_pct": 38,
       "td_def_pct": 65,
       "sub_avg_per15": 0.9,
-      "last_5": ["L vs Islam Makhachev (SUB R5)", "W vs Benoit Saint-Denis (KO R2)", "L vs Justin Gaethje (KO R2)", "W vs Michael Chandler (SUB R3)", "L vs Charles Oliveira (SUB R3)"]
+      "last_5": [
+        "L vs Islam Makhachev (SUB R5)",
+        "W vs Benoit Saint-Denis (KO R2)",
+        "L vs Justin Gaethje (KO R2)",
+        "W vs Michael Chandler (SUB R3)",
+        "L vs Charles Oliveira (SUB R3)"
+      ]
     },
     {
       "name": "Justin Gaethje",
       "nickname": "The Highlight",
       "weight_class": "Lightweight",
-      "record": "27-5-0",
+      "record": "28-5-0",
       "stance": "Orthodox",
       "height_in": 71,
       "reach_in": 70,
-      "age": 36,
+      "age": 37,
       "slpm": 6.48,
       "str_acc_pct": 58,
       "sapm": 7.05,
@@ -493,7 +643,13 @@
       "td_acc_pct": 14,
       "td_def_pct": 90,
       "sub_avg_per15": 0.0,
-      "last_5": ["W vs Arman Tsarukyan (UD)", "L vs Max Holloway (KO R5)", "W vs Dustin Poirier (KO R2)", "W vs Rafael Fiziev (MD)", "L vs Charles Oliveira (SUB R1)"]
+      "last_5": [
+        "W vs Ilia Topuria (TKO R4)",
+        "W vs Arman Tsarukyan (UD)",
+        "L vs Max Holloway (KO R5)",
+        "W vs Dustin Poirier (KO R2)",
+        "W vs Rafael Fiziev (MD)"
+      ]
     },
     {
       "name": "Arman Tsarukyan",
@@ -512,17 +668,23 @@
       "td_acc_pct": 50,
       "td_def_pct": 70,
       "sub_avg_per15": 1.5,
-      "last_5": ["W vs Islam Makhachev (UD)", "L vs Justin Gaethje (UD)", "W vs Beneil Dariush (KO R1)", "W vs Joaquim Silva (TKO R2)", "W vs Damir Ismagulov (UD)"]
+      "last_5": [
+        "W vs Islam Makhachev (UD)",
+        "L vs Justin Gaethje (UD)",
+        "W vs Beneil Dariush (KO R1)",
+        "W vs Joaquim Silva (TKO R2)",
+        "W vs Damir Ismagulov (UD)"
+      ]
     },
     {
       "name": "Michael Chandler",
       "nickname": "Iron",
       "weight_class": "Lightweight",
-      "record": "23-9-0",
+      "record": "23-10-0",
       "stance": "Orthodox",
       "height_in": 68,
       "reach_in": 71,
-      "age": 39,
+      "age": 40,
       "slpm": 4.0,
       "str_acc_pct": 45,
       "sapm": 4.2,
@@ -531,17 +693,23 @@
       "td_acc_pct": 38,
       "td_def_pct": 65,
       "sub_avg_per15": 0.8,
-      "last_5": ["L vs Conor McGregor (cancelled, awaiting)", "L vs Dustin Poirier (SUB R3)", "W vs Tony Ferguson (KO R2)", "L vs Justin Gaethje (TKO R3)", "L vs Charles Oliveira (TKO R2)"]
+      "last_5": [
+        "L vs Mauricio Ruffy (TKO R1)",
+        "L vs Dustin Poirier (SUB R3)",
+        "W vs Tony Ferguson (KO R2)",
+        "L vs Justin Gaethje (TKO R3)",
+        "L vs Charles Oliveira (TKO R2)"
+      ]
     },
     {
       "name": "Ilia Topuria",
       "nickname": "El Matador",
       "weight_class": "Lightweight",
-      "record": "17-0-0",
+      "record": "17-1-0",
       "stance": "Orthodox",
       "height_in": 67,
       "reach_in": 69,
-      "age": 27,
+      "age": 28,
       "slpm": 4.5,
       "str_acc_pct": 55,
       "sapm": 2.5,
@@ -550,7 +718,13 @@
       "td_acc_pct": 47,
       "td_def_pct": 80,
       "sub_avg_per15": 1.0,
-      "last_5": ["W vs Max Holloway (KO R3)", "W vs Alexander Volkanovski (KO R2)", "W vs Josh Emmett (UD)", "W vs Bryce Mitchell (SUB R2)", "W vs Jai Herbert (KO R2)"]
+      "last_5": [
+        "L vs Justin Gaethje (TKO R4)",
+        "W vs Max Holloway (KO R3)",
+        "W vs Alexander Volkanovski (KO R2)",
+        "W vs Josh Emmett (UD)",
+        "W vs Bryce Mitchell (SUB R2)"
+      ]
     },
     {
       "name": "Alexander Volkanovski",
@@ -569,17 +743,23 @@
       "td_acc_pct": 40,
       "td_def_pct": 70,
       "sub_avg_per15": 0.0,
-      "last_5": ["L vs Ilia Topuria (KO R3)", "L vs Ilia Topuria (KO R2)", "L vs Islam Makhachev (KO R1)", "W vs Yair Rodriguez (TKO R3)", "L vs Islam Makhachev (UD)"]
+      "last_5": [
+        "L vs Ilia Topuria (KO R3)",
+        "L vs Ilia Topuria (KO R2)",
+        "L vs Islam Makhachev (KO R1)",
+        "W vs Yair Rodriguez (TKO R3)",
+        "L vs Islam Makhachev (UD)"
+      ]
     },
     {
       "name": "Max Holloway",
       "nickname": "Blessed",
-      "weight_class": "Lightweight",
-      "record": "27-7-0",
+      "weight_class": "Welterweight",
+      "record": "28-7-0",
       "stance": "Orthodox",
       "height_in": 71,
       "reach_in": 69,
-      "age": 33,
+      "age": 34,
       "slpm": 7.2,
       "str_acc_pct": 47,
       "sapm": 4.0,
@@ -588,7 +768,13 @@
       "td_acc_pct": 33,
       "td_def_pct": 70,
       "sub_avg_per15": 0.2,
-      "last_5": ["L vs Ilia Topuria (KO R3)", "W vs Justin Gaethje (KO R5)", "W vs The Korean Zombie (TKO R3)", "L vs Alexander Volkanovski (UD)", "W vs Arnold Allen (UD)"]
+      "last_5": [
+        "W vs Conor McGregor (TKO R1)",
+        "L vs Ilia Topuria (KO R3)",
+        "W vs Justin Gaethje (KO R5)",
+        "W vs The Korean Zombie (TKO R3)",
+        "L vs Alexander Volkanovski (UD)"
+      ]
     },
     {
       "name": "Yair Rodriguez",
@@ -607,7 +793,13 @@
       "td_acc_pct": 28,
       "td_def_pct": 60,
       "sub_avg_per15": 0.5,
-      "last_5": ["L vs Brian Ortega (TKO R1)", "L vs Alexander Volkanovski (TKO R3)", "W vs Josh Emmett (SUB R2)", "W vs Brian Ortega (TKO R1)", "W vs Max Holloway (NC)"]
+      "last_5": [
+        "L vs Brian Ortega (TKO R1)",
+        "L vs Alexander Volkanovski (TKO R3)",
+        "W vs Josh Emmett (SUB R2)",
+        "W vs Brian Ortega (TKO R1)",
+        "W vs Max Holloway (NC)"
+      ]
     },
     {
       "name": "Brian Ortega",
@@ -626,13 +818,19 @@
       "td_acc_pct": 33,
       "td_def_pct": 60,
       "sub_avg_per15": 2.5,
-      "last_5": ["W vs Yair Rodriguez (TKO R1)", "L vs Yair Rodriguez (TKO R1, injury)", "L vs Alexander Volkanovski (UD)", "W vs Chan Sung Jung (SUB R1)", "W vs Frankie Edgar (UD)"]
+      "last_5": [
+        "W vs Yair Rodriguez (TKO R1)",
+        "L vs Yair Rodriguez (TKO R1, injury)",
+        "L vs Alexander Volkanovski (UD)",
+        "W vs Chan Sung Jung (SUB R1)",
+        "W vs Frankie Edgar (UD)"
+      ]
     },
     {
       "name": "Sean O'Malley",
       "nickname": "Suga",
       "weight_class": "Bantamweight",
-      "record": "18-3-0",
+      "record": "19-3-0",
       "stance": "Switch",
       "height_in": 71,
       "reach_in": 72,
@@ -645,7 +843,13 @@
       "td_acc_pct": 16,
       "td_def_pct": 73,
       "sub_avg_per15": 0.3,
-      "last_5": ["L vs Merab Dvalishvili (SUB R3)", "L vs Merab Dvalishvili (UD)", "W vs Marlon Vera (UD)", "W vs Aljamain Sterling (KO R2)", "W vs Petr Yan (SD)"]
+      "last_5": [
+        "W vs Aiemann Zahabi (TKO R2)",
+        "L vs Merab Dvalishvili (SUB R3)",
+        "L vs Merab Dvalishvili (UD)",
+        "W vs Marlon Vera (UD)",
+        "W vs Aljamain Sterling (KO R2)"
+      ]
     },
     {
       "name": "Merab Dvalishvili",
@@ -664,7 +868,13 @@
       "td_acc_pct": 38,
       "td_def_pct": 50,
       "sub_avg_per15": 0.2,
-      "last_5": ["W vs Sean O'Malley (SUB R3)", "W vs Sean O'Malley (UD)", "W vs Henry Cejudo (UD)", "W vs Petr Yan (UD)", "W vs Jose Aldo (UD)"]
+      "last_5": [
+        "W vs Sean O'Malley (SUB R3)",
+        "W vs Sean O'Malley (UD)",
+        "W vs Henry Cejudo (UD)",
+        "W vs Petr Yan (UD)",
+        "W vs Jose Aldo (UD)"
+      ]
     },
     {
       "name": "Aljamain Sterling",
@@ -683,7 +893,13 @@
       "td_acc_pct": 33,
       "td_def_pct": 53,
       "sub_avg_per15": 1.0,
-      "last_5": ["L vs Sean O'Malley (KO R2)", "W vs Henry Cejudo (SD)", "W vs T.J. Dillashaw (TKO R2)", "W vs Petr Yan (UD)", "W vs Petr Yan (DQ R4)"]
+      "last_5": [
+        "L vs Sean O'Malley (KO R2)",
+        "W vs Henry Cejudo (SD)",
+        "W vs T.J. Dillashaw (TKO R2)",
+        "W vs Petr Yan (UD)",
+        "W vs Petr Yan (DQ R4)"
+      ]
     },
     {
       "name": "Petr Yan",
@@ -702,17 +918,23 @@
       "td_acc_pct": 37,
       "td_def_pct": 73,
       "sub_avg_per15": 0.5,
-      "last_5": ["W vs Song Yadong (UD)", "L vs Merab Dvalishvili (UD)", "L vs Sean O'Malley (SD)", "L vs Aljamain Sterling (UD)", "W vs Cory Sandhagen (UD)"]
+      "last_5": [
+        "W vs Song Yadong (UD)",
+        "L vs Merab Dvalishvili (UD)",
+        "L vs Sean O'Malley (SD)",
+        "L vs Aljamain Sterling (UD)",
+        "W vs Cory Sandhagen (UD)"
+      ]
     },
     {
       "name": "Cory Sandhagen",
       "nickname": "Sandman",
       "weight_class": "Bantamweight",
-      "record": "17-6-0",
+      "record": "17-7-0",
       "stance": "Orthodox",
       "height_in": 71,
       "reach_in": 70,
-      "age": 32,
+      "age": 33,
       "slpm": 5.5,
       "str_acc_pct": 41,
       "sapm": 4.2,
@@ -721,7 +943,13 @@
       "td_acc_pct": 28,
       "td_def_pct": 70,
       "sub_avg_per15": 0.7,
-      "last_5": ["L vs Deiveson Figueiredo (TKO R2)", "L vs Umar Nurmagomedov (UD)", "W vs Rob Font (UD)", "W vs Marlon Vera (UD)", "W vs Song Yadong (TKO R4)"]
+      "last_5": [
+        "L vs Mario Bautista (UD)",
+        "L vs Deiveson Figueiredo (TKO R2)",
+        "L vs Umar Nurmagomedov (UD)",
+        "W vs Rob Font (UD)",
+        "W vs Marlon Vera (UD)"
+      ]
     },
     {
       "name": "Alexandre Pantoja",
@@ -740,7 +968,13 @@
       "td_acc_pct": 38,
       "td_def_pct": 70,
       "sub_avg_per15": 2.0,
-      "last_5": ["W vs Steve Erceg (UD)", "W vs Brandon Royval (UD)", "W vs Brandon Moreno (SD)", "W vs Brandon Royval (SUB R2)", "W vs Alex Perez (SUB R1)"]
+      "last_5": [
+        "W vs Steve Erceg (UD)",
+        "W vs Brandon Royval (UD)",
+        "W vs Brandon Moreno (SD)",
+        "W vs Brandon Royval (SUB R2)",
+        "W vs Alex Perez (SUB R1)"
+      ]
     },
     {
       "name": "Brandon Moreno",
@@ -759,7 +993,13 @@
       "td_acc_pct": 30,
       "td_def_pct": 53,
       "sub_avg_per15": 1.5,
-      "last_5": ["L vs Alexandre Pantoja (UD)", "L vs Brandon Royval (UD)", "L vs Alexandre Pantoja (SD)", "W vs Brandon Royval (TKO R2)", "L vs Deiveson Figueiredo (MD)"]
+      "last_5": [
+        "L vs Alexandre Pantoja (UD)",
+        "L vs Brandon Royval (UD)",
+        "L vs Alexandre Pantoja (SD)",
+        "W vs Brandon Royval (TKO R2)",
+        "L vs Deiveson Figueiredo (MD)"
+      ]
     },
     {
       "name": "Zhang Weili",
@@ -778,7 +1018,13 @@
       "td_acc_pct": 38,
       "td_def_pct": 70,
       "sub_avg_per15": 0.5,
-      "last_5": ["W vs Tatiana Suarez (UD)", "W vs Yan Xiaonan (UD)", "W vs Amanda Lemos (UD)", "W vs Carla Esparza (SUB R2)", "L vs Rose Namajunas (SD)"]
+      "last_5": [
+        "W vs Tatiana Suarez (UD)",
+        "W vs Yan Xiaonan (UD)",
+        "W vs Amanda Lemos (UD)",
+        "W vs Carla Esparza (SUB R2)",
+        "L vs Rose Namajunas (SD)"
+      ]
     },
     {
       "name": "Alexa Grasso",
@@ -797,7 +1043,13 @@
       "td_acc_pct": 33,
       "td_def_pct": 60,
       "sub_avg_per15": 0.8,
-      "last_5": ["L vs Valentina Shevchenko (UD)", "D vs Valentina Shevchenko (split draw)", "W vs Valentina Shevchenko (SUB R4)", "W vs Viviane Araujo (UD)", "W vs Maycee Barber (SUB R2)"]
+      "last_5": [
+        "L vs Valentina Shevchenko (UD)",
+        "D vs Valentina Shevchenko (split draw)",
+        "W vs Valentina Shevchenko (SUB R4)",
+        "W vs Viviane Araujo (UD)",
+        "W vs Maycee Barber (SUB R2)"
+      ]
     },
     {
       "name": "Valentina Shevchenko",
@@ -816,17 +1068,23 @@
       "td_acc_pct": 38,
       "td_def_pct": 80,
       "sub_avg_per15": 0.3,
-      "last_5": ["W vs Alexa Grasso (UD)", "D vs Alexa Grasso (split draw)", "L vs Alexa Grasso (SUB R4)", "W vs Taila Santos (SD)", "W vs Lauren Murphy (TKO R4)"]
+      "last_5": [
+        "W vs Alexa Grasso (UD)",
+        "D vs Alexa Grasso (split draw)",
+        "L vs Alexa Grasso (SUB R4)",
+        "W vs Taila Santos (SD)",
+        "W vs Lauren Murphy (TKO R4)"
+      ]
     },
     {
       "name": "Conor McGregor",
       "nickname": "The Notorious",
-      "weight_class": "Lightweight",
-      "record": "22-6-0",
+      "weight_class": "Welterweight",
+      "record": "22-7-0",
       "stance": "Southpaw",
       "height_in": 69,
       "reach_in": 74,
-      "age": 37,
+      "age": 38,
       "slpm": 5.3,
       "str_acc_pct": 49,
       "sapm": 4.6,
@@ -835,7 +1093,13 @@
       "td_acc_pct": 56,
       "td_def_pct": 67,
       "sub_avg_per15": 0.1,
-      "last_5": ["L vs Dustin Poirier (TKO R1, injury)", "L vs Dustin Poirier (TKO R2)", "W vs Donald Cerrone (TKO R1)", "L vs Khabib Nurmagomedov (SUB R4)", "W vs Eddie Alvarez (TKO R2)"]
+      "last_5": [
+        "L vs Max Holloway (TKO R1, knee injury)",
+        "L vs Dustin Poirier (TKO R1, injury)",
+        "L vs Dustin Poirier (TKO R2)",
+        "W vs Donald Cerrone (TKO R1)",
+        "L vs Khabib Nurmagomedov (SUB R4)"
+      ]
     },
     {
       "name": "Deiveson Figueiredo",
@@ -854,7 +1118,13 @@
       "td_acc_pct": 35,
       "td_def_pct": 57,
       "sub_avg_per15": 1.2,
-      "last_5": ["W vs Umar Nurmagomedov (UD)", "W vs Montel Jackson (SD)", "L vs Cory Sandhagen (TKO R2)", "W vs Rob Font (UD)", "L vs Brandon Moreno (MD)"]
+      "last_5": [
+        "W vs Umar Nurmagomedov (UD)",
+        "W vs Montel Jackson (SD)",
+        "L vs Cory Sandhagen (TKO R2)",
+        "W vs Rob Font (UD)",
+        "L vs Brandon Moreno (MD)"
+      ]
     },
     {
       "name": "Kelvin Gastelum",
@@ -873,7 +1143,13 @@
       "td_acc_pct": 35,
       "td_def_pct": 60,
       "sub_avg_per15": 0.5,
-      "last_5": ["L vs Reinier de Ridder (UD)", "L vs Joe Pyfer (TKO R1)", "L vs Bruno Silva (UD)", "W vs Brad Tavares (UD)", "L vs Nassourdine Imavov (UD)"]
+      "last_5": [
+        "L vs Reinier de Ridder (UD)",
+        "L vs Joe Pyfer (TKO R1)",
+        "L vs Bruno Silva (UD)",
+        "W vs Brad Tavares (UD)",
+        "L vs Nassourdine Imavov (UD)"
+      ]
     },
     {
       "name": "Chris Curtis",
@@ -892,7 +1168,13 @@
       "td_acc_pct": 20,
       "td_def_pct": 65,
       "sub_avg_per15": 0.2,
-      "last_5": ["W vs Marc-Andre Barriault (UD)", "L vs Brendan Allen (UD)", "W vs Kelvin Gastelum (UD)", "L vs Sean Strickland (UD)", "W vs Rodolfo Vieira (UD)"]
+      "last_5": [
+        "W vs Marc-Andre Barriault (UD)",
+        "L vs Brendan Allen (UD)",
+        "W vs Kelvin Gastelum (UD)",
+        "L vs Sean Strickland (UD)",
+        "W vs Rodolfo Vieira (UD)"
+      ]
     },
     {
       "name": "Rafael Fiziev",
@@ -911,7 +1193,13 @@
       "td_acc_pct": 66,
       "td_def_pct": 90,
       "sub_avg_per15": 0.0,
-      "last_5": ["L vs Renato Moicano (UD)", "L vs Mateusz Gamrot (UD)", "L vs Arman Tsarukyan (UD)", "W vs Justin Gaethje (MD, loss overturned)", "L vs Rafael dos Anjos (UD)"]
+      "last_5": [
+        "L vs Renato Moicano (UD)",
+        "L vs Mateusz Gamrot (UD)",
+        "L vs Arman Tsarukyan (UD)",
+        "W vs Justin Gaethje (MD, loss overturned)",
+        "L vs Rafael dos Anjos (UD)"
+      ]
     },
     {
       "name": "Arnold Allen",
@@ -930,7 +1218,13 @@
       "td_acc_pct": 38,
       "td_def_pct": 72,
       "sub_avg_per15": 0.5,
-      "last_5": ["L vs Reinier de Ridder (UD)", "L vs Giga Chikadze (UD)", "L vs Movsar Evloev (UD)", "W vs Dan Hooker (UD)", "W vs Max Holloway (UD)"]
+      "last_5": [
+        "L vs Reinier de Ridder (UD)",
+        "L vs Giga Chikadze (UD)",
+        "L vs Movsar Evloev (UD)",
+        "W vs Dan Hooker (UD)",
+        "W vs Max Holloway (UD)"
+      ]
     },
     {
       "name": "Tatiana Suarez",
@@ -949,7 +1243,13 @@
       "td_acc_pct": 58,
       "td_def_pct": 80,
       "sub_avg_per15": 2.5,
-      "last_5": ["L vs Zhang Weili (UD)", "W vs Virna Jandiroba (UD)", "W vs Michelle Waterson-Gomez (UD)", "W vs Nina Nunes (UD)", "W vs Carla Esparza (UD)"]
+      "last_5": [
+        "L vs Zhang Weili (UD)",
+        "W vs Virna Jandiroba (UD)",
+        "W vs Michelle Waterson-Gomez (UD)",
+        "W vs Nina Nunes (UD)",
+        "W vs Carla Esparza (UD)"
+      ]
     },
     {
       "name": "Yan Xiaonan",
@@ -960,7 +1260,7 @@
       "height_in": 63,
       "reach_in": 63,
       "age": 36,
-      "slpm": 3.50,
+      "slpm": 3.5,
       "str_acc_pct": 41,
       "sapm": 3.38,
       "str_def_pct": 63,
@@ -968,7 +1268,13 @@
       "td_acc_pct": 30,
       "td_def_pct": 68,
       "sub_avg_per15": 0.3,
-      "last_5": ["L vs Zhang Weili (UD)", "W vs Mackenzie Dern (UD)", "W vs Tecia Torres (UD)", "L vs Carla Esparza (SD)", "W vs Angela Hill (UD)"]
+      "last_5": [
+        "L vs Zhang Weili (UD)",
+        "W vs Mackenzie Dern (UD)",
+        "W vs Tecia Torres (UD)",
+        "L vs Carla Esparza (SD)",
+        "W vs Angela Hill (UD)"
+      ]
     },
     {
       "name": "Rose Namajunas",
@@ -987,7 +1293,13 @@
       "td_acc_pct": 33,
       "td_def_pct": 70,
       "sub_avg_per15": 0.8,
-      "last_5": ["L vs Valentina Shevchenko (UD)", "W vs Tracy Cortez (UD)", "W vs Amanda Ribas (UD)", "L vs Zhang Weili (UD)", "W vs Carla Esparza (SUB R1)"]
+      "last_5": [
+        "L vs Valentina Shevchenko (UD)",
+        "W vs Tracy Cortez (UD)",
+        "W vs Amanda Ribas (UD)",
+        "L vs Zhang Weili (UD)",
+        "W vs Carla Esparza (SUB R1)"
+      ]
     },
     {
       "name": "Manon Fiorot",
@@ -1006,7 +1318,13 @@
       "td_acc_pct": 25,
       "td_def_pct": 75,
       "sub_avg_per15": 0.0,
-      "last_5": ["W vs Katlyn Cerminara (UD)", "L vs Valentina Shevchenko (UD)", "W vs Erin Blanchfield (UD)", "W vs Jennifer Maia (UD)", "W vs Katlyn Cerminara (UD)"]
+      "last_5": [
+        "W vs Katlyn Cerminara (UD)",
+        "L vs Valentina Shevchenko (UD)",
+        "W vs Erin Blanchfield (UD)",
+        "W vs Jennifer Maia (UD)",
+        "W vs Katlyn Cerminara (UD)"
+      ]
     },
     {
       "name": "Kayla Harrison",
@@ -1019,13 +1337,544 @@
       "age": 34,
       "slpm": 4.29,
       "str_acc_pct": 62,
-      "sapm": 1.10,
+      "sapm": 1.1,
       "str_def_pct": 66,
       "td_avg_per15": 4.5,
       "td_acc_pct": 55,
       "td_def_pct": 85,
       "sub_avg_per15": 2.0,
-      "last_5": ["W vs Julianna Pena (SUB R2)", "W vs Holly Holm (UD)", "W vs Ketlen Vieira (UD)", "W vs Larissa Pacheco (UD)", "W vs Aspen Ladd (TKO R1)"]
+      "last_5": [
+        "W vs Julianna Pena (SUB R2)",
+        "W vs Holly Holm (UD)",
+        "W vs Ketlen Vieira (UD)",
+        "W vs Larissa Pacheco (UD)",
+        "W vs Aspen Ladd (TKO R1)"
+      ]
+    },
+    {
+      "name": "Bo Nickal",
+      "nickname": "",
+      "weight_class": "Middleweight",
+      "record": "9-1-0",
+      "stance": "Orthodox",
+      "height_in": 74,
+      "reach_in": 76,
+      "age": 28,
+      "slpm": 3.5,
+      "str_acc_pct": 55,
+      "sapm": 1.8,
+      "str_def_pct": 60,
+      "td_avg_per15": 5.0,
+      "td_acc_pct": 60,
+      "td_def_pct": 80,
+      "sub_avg_per15": 1.5,
+      "last_5": [
+        "W vs Kyle Daukaus (TKO R1)",
+        "W vs Paul Craig (SUB R1)",
+        "L vs Caio Borralho (UD)",
+        "W vs Cody Brundage (SUB R1)",
+        "W vs Val Woodburn (SUB R1)"
+      ]
+    },
+    {
+      "name": "Diego Lopes",
+      "nickname": "",
+      "weight_class": "Featherweight",
+      "record": "28-8-0",
+      "stance": "Orthodox",
+      "height_in": 71,
+      "reach_in": 72.5,
+      "age": 31,
+      "slpm": 5.8,
+      "str_acc_pct": 52,
+      "sapm": 4.2,
+      "str_def_pct": 50,
+      "td_avg_per15": 1.5,
+      "td_acc_pct": 40,
+      "td_def_pct": 60,
+      "sub_avg_per15": 1.5,
+      "last_5": [
+        "W vs Steve Garcia (KO R2)",
+        "L vs Alexander Volkanovski (UD)",
+        "W vs Brian Ortega (SUB R3)",
+        "W vs Sodiq Yusuff (KO R1)",
+        "W vs Dan Ige (SUB R2)"
+      ]
+    },
+    {
+      "name": "Mauricio Ruffy",
+      "nickname": "",
+      "weight_class": "Lightweight",
+      "record": "12-1-0",
+      "stance": "Orthodox",
+      "height_in": 72,
+      "reach_in": 75,
+      "age": 28,
+      "slpm": 5.5,
+      "str_acc_pct": 55,
+      "sapm": 2.5,
+      "str_def_pct": 60,
+      "td_avg_per15": 0.5,
+      "td_acc_pct": 50,
+      "td_def_pct": 70,
+      "sub_avg_per15": 0.5,
+      "last_5": [
+        "W vs Michael Chandler (TKO R1)",
+        "W vs Jamie Mullarkey (KO R1)",
+        "W vs Loik Radzhabov (TKO R1)",
+        "W vs Nicolas Dalby (KO R1)",
+        "W vs Roberto Romero (KO R1)"
+      ]
+    },
+    {
+      "name": "Josh Hokit",
+      "nickname": "",
+      "weight_class": "Heavyweight",
+      "record": "10-0-0",
+      "stance": "Orthodox",
+      "height_in": 73,
+      "reach_in": 74,
+      "age": 28,
+      "slpm": 5.0,
+      "str_acc_pct": 50,
+      "sapm": 3.0,
+      "str_def_pct": 55,
+      "td_avg_per15": 2.0,
+      "td_acc_pct": 50,
+      "td_def_pct": 65,
+      "sub_avg_per15": 0.5,
+      "last_5": [
+        "W vs Derrick Lewis (TKO R2)",
+        "W vs Waldo Cortes-Acosta (KO R2)",
+        "W vs Josh Parisian (TKO R1)",
+        "W vs Jamal Pogues (KO R1)",
+        "W vs Mike Breeden (TKO R1)"
+      ]
+    },
+    {
+      "name": "Derrick Lewis",
+      "nickname": "The Black Beast",
+      "weight_class": "Heavyweight",
+      "record": "28-12-0",
+      "stance": "Orthodox",
+      "height_in": 75,
+      "reach_in": 79,
+      "age": 41,
+      "slpm": 3.2,
+      "str_acc_pct": 47,
+      "sapm": 3.5,
+      "str_def_pct": 55,
+      "td_avg_per15": 0.0,
+      "td_acc_pct": 0,
+      "td_def_pct": 65,
+      "sub_avg_per15": 0.0,
+      "last_5": [
+        "L vs Josh Hokit (TKO R2)",
+        "W vs Jhonata Diniz (KO R1)",
+        "L vs Serghei Spivac (SUB R1)",
+        "L vs Sergei Pavlovich (KO R1)",
+        "W vs Marcos Rogerio de Lima (KO R2)"
+      ]
+    },
+    {
+      "name": "Paddy Pimblett",
+      "nickname": "The Baddy",
+      "weight_class": "Lightweight",
+      "record": "24-4-0",
+      "stance": "Southpaw",
+      "height_in": 70,
+      "reach_in": 72,
+      "age": 31,
+      "slpm": 4.5,
+      "str_acc_pct": 45,
+      "sapm": 3.5,
+      "str_def_pct": 50,
+      "td_avg_per15": 2.0,
+      "td_acc_pct": 40,
+      "td_def_pct": 55,
+      "sub_avg_per15": 2.0,
+      "last_5": [
+        "W vs Benoit Saint Denis (SUB R1)",
+        "L vs Justin Gaethje (UD)",
+        "W vs Michael Chandler (UD)",
+        "W vs King Green (UD)",
+        "W vs Tony Ferguson (SUB R2)"
+      ]
+    },
+    {
+      "name": "Mario Bautista",
+      "nickname": "",
+      "weight_class": "Bantamweight",
+      "record": "15-2-0",
+      "stance": "Southpaw",
+      "height_in": 67,
+      "reach_in": 69,
+      "age": 31,
+      "slpm": 4.5,
+      "str_acc_pct": 48,
+      "sapm": 3.0,
+      "str_def_pct": 55,
+      "td_avg_per15": 2.5,
+      "td_acc_pct": 45,
+      "td_def_pct": 70,
+      "sub_avg_per15": 1.0,
+      "last_5": [
+        "W vs Cory Sandhagen (UD)",
+        "W vs Ricky Simon (TKO R3)",
+        "L vs Cory Sandhagen (SD)",
+        "W vs Trevin Jones (SUB R2)",
+        "W vs Da'Mon Blackshear (UD)"
+      ]
+    },
+    {
+      "name": "Mackenzie Dern",
+      "nickname": "",
+      "weight_class": "Women's Strawweight",
+      "record": "16-5-0",
+      "stance": "Orthodox",
+      "height_in": 64,
+      "reach_in": 63,
+      "age": 33,
+      "slpm": 3.2,
+      "str_acc_pct": 42,
+      "sapm": 3.8,
+      "str_def_pct": 48,
+      "td_avg_per15": 2.5,
+      "td_acc_pct": 35,
+      "td_def_pct": 45,
+      "sub_avg_per15": 2.5,
+      "last_5": [
+        "W vs Virna Jandiroba (UD)",
+        "W vs Lupita Godinez (SUB R2)",
+        "W vs Loopy Godinez (UD)",
+        "L vs Amanda Lemos (UD)",
+        "L vs Yan Xiaonan (UD)"
+      ]
+    },
+    {
+      "name": "Edson Barboza",
+      "nickname": "",
+      "weight_class": "Lightweight",
+      "record": "24-14-0",
+      "stance": "Orthodox",
+      "height_in": 71,
+      "reach_in": 75,
+      "age": 40,
+      "slpm": 4.5,
+      "str_acc_pct": 47,
+      "sapm": 4.2,
+      "str_def_pct": 57,
+      "td_avg_per15": 0.5,
+      "td_acc_pct": 30,
+      "td_def_pct": 65,
+      "sub_avg_per15": 0.0,
+      "last_5": [
+        "W vs Diego Ferreira (KO R1)",
+        "W vs Billy Quarantillo (KO R1)",
+        "L vs Lerone Murphy (UD)",
+        "L vs Giga Chikadze (UD)",
+        "W vs Ilia Topuria (UD)"
+      ]
+    },
+    {
+      "name": "Vicente Luque",
+      "nickname": "The Silent Assassin",
+      "weight_class": "Welterweight",
+      "record": "22-10-1",
+      "stance": "Orthodox",
+      "height_in": 71,
+      "reach_in": 72,
+      "age": 35,
+      "slpm": 4.8,
+      "str_acc_pct": 50,
+      "sapm": 4.5,
+      "str_def_pct": 50,
+      "td_avg_per15": 0.5,
+      "td_acc_pct": 30,
+      "td_def_pct": 55,
+      "sub_avg_per15": 1.0,
+      "last_5": [
+        "L vs Joaquin Buckley (KO R2)",
+        "L vs Belal Muhammad (UD)",
+        "W vs Rafael dos Anjos (SUB R1)",
+        "L vs Sean Brady (SUB R2)",
+        "W vs Geoff Neal (SUB R2)"
+      ]
+    },
+    {
+      "name": "Brandon Royval",
+      "nickname": "Raw Dawg",
+      "weight_class": "Flyweight",
+      "record": "17-8-0",
+      "stance": "Orthodox",
+      "height_in": 68,
+      "reach_in": 70,
+      "age": 32,
+      "slpm": 5.0,
+      "str_acc_pct": 45,
+      "sapm": 4.5,
+      "str_def_pct": 50,
+      "td_avg_per15": 1.5,
+      "td_acc_pct": 35,
+      "td_def_pct": 45,
+      "sub_avg_per15": 2.0,
+      "last_5": [
+        "W vs Lone'er Kavanagh (SUB R3)",
+        "L vs Alexandre Pantoja (UD)",
+        "W vs Brandon Moreno (UD)",
+        "L vs Alexandre Pantoja (UD)",
+        "W vs Brandon Moreno (TKO R2)"
+      ]
+    },
+    {
+      "name": "Bo Nickal",
+      "nickname": "",
+      "weight_class": "Middleweight",
+      "record": "9-1-0",
+      "stance": "Orthodox",
+      "height_in": 74,
+      "reach_in": 76,
+      "age": 30,
+      "slpm": 3.5,
+      "str_acc_pct": 55,
+      "sapm": 2.0,
+      "str_def_pct": 60,
+      "td_avg_per15": 4.0,
+      "td_acc_pct": 55,
+      "td_def_pct": 85,
+      "sub_avg_per15": 1.5,
+      "last_5": [
+        "W vs Kyle Daukaus (TKO R1)",
+        "W vs Paul Craig (SUB R1)",
+        "L vs Caio Borralho (UD)",
+        "W vs Cody Brundage (SUB R1)",
+        "W vs Val Woodburn (TKO R1)"
+      ]
+    },
+    {
+      "name": "Diego Lopes",
+      "nickname": "",
+      "weight_class": "Featherweight",
+      "record": "28-8-0",
+      "stance": "Orthodox",
+      "height_in": 71,
+      "reach_in": 72.5,
+      "age": 31,
+      "slpm": 5.0,
+      "str_acc_pct": 52,
+      "sapm": 4.0,
+      "str_def_pct": 50,
+      "td_avg_per15": 1.5,
+      "td_acc_pct": 40,
+      "td_def_pct": 55,
+      "sub_avg_per15": 1.8,
+      "last_5": [
+        "W vs Steve Garcia (KO R2)",
+        "L vs Alexander Volkanovski (UD)",
+        "W vs Brian Ortega (SUB R2)",
+        "W vs Dan Ige (KO R1)",
+        "W vs Sodiq Yusuff (UD)"
+      ]
+    },
+    {
+      "name": "Paddy Pimblett",
+      "nickname": "The Baddy",
+      "weight_class": "Lightweight",
+      "record": "24-4-0",
+      "stance": "Southpaw",
+      "height_in": 70,
+      "reach_in": 73,
+      "age": 31,
+      "slpm": 4.0,
+      "str_acc_pct": 45,
+      "sapm": 3.5,
+      "str_def_pct": 50,
+      "td_avg_per15": 1.5,
+      "td_acc_pct": 35,
+      "td_def_pct": 55,
+      "sub_avg_per15": 1.8,
+      "last_5": [
+        "W vs Benoit Saint Denis (SUB R1)",
+        "L vs Justin Gaethje (UD)",
+        "W vs Michael Chandler (UD)",
+        "W vs King Green (UD)",
+        "W vs Tony Ferguson (SUB R1)"
+      ]
+    },
+    {
+      "name": "Mauricio Ruffy",
+      "nickname": "",
+      "weight_class": "Lightweight",
+      "record": "12-1-0",
+      "stance": "Switch",
+      "height_in": 72,
+      "reach_in": 75,
+      "age": 28,
+      "slpm": 5.5,
+      "str_acc_pct": 55,
+      "sapm": 3.0,
+      "str_def_pct": 58,
+      "td_avg_per15": 0.5,
+      "td_acc_pct": 50,
+      "td_def_pct": 70,
+      "sub_avg_per15": 0.5,
+      "last_5": [
+        "W vs Michael Chandler (TKO R1)",
+        "W vs Jamie Mullarkey (KO R1)",
+        "W vs James Llontop (TKO R2)",
+        "W vs Drew Dober (UD)",
+        "L vs Benoit Saint Denis (UD)"
+      ]
+    },
+    {
+      "name": "Derrick Lewis",
+      "nickname": "The Black Beast",
+      "weight_class": "Heavyweight",
+      "record": "28-12-0",
+      "stance": "Orthodox",
+      "height_in": 75,
+      "reach_in": 79,
+      "age": 41,
+      "slpm": 4.5,
+      "str_acc_pct": 49,
+      "sapm": 3.8,
+      "str_def_pct": 52,
+      "td_avg_per15": 0.3,
+      "td_acc_pct": 25,
+      "td_def_pct": 62,
+      "sub_avg_per15": 0.0,
+      "last_5": [
+        "L vs Josh Hokit (TKO R2)",
+        "L vs Jhonata Diniz (KO R1)",
+        "L vs Sergei Pavlovich (KO R1)",
+        "W vs Rodrigo Nascimento (KO R2)",
+        "L vs Tai Tuivasa (KO R2)"
+      ]
+    },
+    {
+      "name": "Josh Hokit",
+      "nickname": "",
+      "weight_class": "Heavyweight",
+      "record": "11-0-0",
+      "stance": "Orthodox",
+      "height_in": 74,
+      "reach_in": 76,
+      "age": 27,
+      "slpm": 5.0,
+      "str_acc_pct": 52,
+      "sapm": 2.5,
+      "str_def_pct": 55,
+      "td_avg_per15": 2.0,
+      "td_acc_pct": 50,
+      "td_def_pct": 70,
+      "sub_avg_per15": 0.5,
+      "last_5": [
+        "W vs Derrick Lewis (TKO R2)",
+        "W vs Waldo Cortes-Acosta (TKO R2)",
+        "W vs Karl Williams (KO R1)",
+        "W vs Josh Parisian (TKO R1)",
+        "W vs Chris Barnett (KO R1)"
+      ]
+    },
+    {
+      "name": "Edson Barboza",
+      "nickname": "",
+      "weight_class": "Lightweight",
+      "record": "24-14-0",
+      "stance": "Orthodox",
+      "height_in": 71,
+      "reach_in": 75,
+      "age": 40,
+      "slpm": 4.5,
+      "str_acc_pct": 48,
+      "sapm": 4.2,
+      "str_def_pct": 55,
+      "td_avg_per15": 0.3,
+      "td_acc_pct": 33,
+      "td_def_pct": 65,
+      "sub_avg_per15": 0.2,
+      "last_5": [
+        "W vs Diego Ferreira (KO R1)",
+        "L vs Lerone Murphy (UD)",
+        "W vs Billy Quarantillo (KO R1)",
+        "L vs Sodiq Yusuff (UD)",
+        "W vs Ilia Topuria (UD)"
+      ]
+    },
+    {
+      "name": "Mackenzie Dern",
+      "nickname": "",
+      "weight_class": "Women's Strawweight",
+      "record": "16-5-0",
+      "stance": "Orthodox",
+      "height_in": 64,
+      "reach_in": 63,
+      "age": 33,
+      "slpm": 3.2,
+      "str_acc_pct": 42,
+      "sapm": 3.5,
+      "str_def_pct": 50,
+      "td_avg_per15": 2.5,
+      "td_acc_pct": 40,
+      "td_def_pct": 55,
+      "sub_avg_per15": 2.0,
+      "last_5": [
+        "W vs Virna Jandiroba (UD)",
+        "W vs Loopy Godinez (SUB R2)",
+        "W vs Amanda Ribas (UD)",
+        "L vs Amanda Lemos (UD)",
+        "L vs Yan Xiaonan (UD)"
+      ]
+    },
+    {
+      "name": "Brandon Royval",
+      "nickname": "Raw Dawg",
+      "weight_class": "Flyweight",
+      "record": "18-7-0",
+      "stance": "Southpaw",
+      "height_in": 68,
+      "reach_in": 70,
+      "age": 32,
+      "slpm": 5.0,
+      "str_acc_pct": 45,
+      "sapm": 4.5,
+      "str_def_pct": 48,
+      "td_avg_per15": 1.0,
+      "td_acc_pct": 30,
+      "td_def_pct": 55,
+      "sub_avg_per15": 1.5,
+      "last_5": [
+        "W vs Lone'er Kavanagh (SUB R3)",
+        "W vs Brandon Moreno (UD)",
+        "L vs Alexandre Pantoja (UD)",
+        "L vs Brandon Moreno (TKO R2)",
+        "L vs Alexandre Pantoja (SUB R2)"
+      ]
+    },
+    {
+      "name": "Mario Bautista",
+      "nickname": "",
+      "weight_class": "Bantamweight",
+      "record": "15-2-0",
+      "stance": "Orthodox",
+      "height_in": 68,
+      "reach_in": 70,
+      "age": 31,
+      "slpm": 4.5,
+      "str_acc_pct": 50,
+      "sapm": 3.0,
+      "str_def_pct": 55,
+      "td_avg_per15": 2.0,
+      "td_acc_pct": 45,
+      "td_def_pct": 65,
+      "sub_avg_per15": 0.8,
+      "last_5": [
+        "W vs Cory Sandhagen (UD)",
+        "W vs Ricky Simon (UD)",
+        "W vs Guido Cannetti (SUB R1)",
+        "W vs Da-Un Jung (KO R1)",
+        "L vs Trevin Jones (KO R1)"
+      ]
     }
   ]
 }
