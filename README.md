@@ -1,8 +1,8 @@
 # Fight Night Matchup
 
-An AI-powered web app for analyzing hypothetical UFC fights. Pick two fighters
-from a local database of 54 well-known UFC names; the app distills each
-fighter's career stats into a structured profile, then runs a head-to-head
+An AI-powered web app for analyzing hypothetical UFC fights. Pick any two of
+the 86 fighters in the local database; the app distills each fighter's
+career stats into a structured profile, then runs a head-to-head
 matchup analysis with predicted advantages, stylistic clash, key factors,
 and a calibrated winner pick.
 
@@ -35,8 +35,8 @@ your OpenAI API key.
 git clone <your-repo-url> fight-night-matchup
 cd fight-night-matchup
 
-# 2. Create and activate a virtualenv (Python 3.11+ required)
-python3.11 -m venv .venv
+# 2. Create and activate a virtualenv (Python 3.10+)
+python3 -m venv .venv
 source .venv/bin/activate
 
 # 3. Install pinned dependencies
@@ -65,7 +65,7 @@ harness commands.
 
 ## Requirements
 
-- Python **3.11+** (the grader's environment).
+- Python **3.10+** (developed and smoke-tested on 3.10.12).
 - An OpenAI API key with access to `gpt-4o-mini`.
 - Internet access (only to reach `api.openai.com`).
 
@@ -75,13 +75,13 @@ The repo has been smoke-tested on macOS and Linux.
 
 ## Setup
 
-Run these commands from the repo root, in order. They assume `python3.11`
-is on your `PATH`; substitute `python3.12` or `python3` if your install
-uses a different alias for Python 3.11+.
+Run these commands from the repo root, in order. Any Python 3.10 or newer
+will work; substitute `python3.11`/`python3.12` if `python3` on your machine
+points at something older.
 
 ```bash
 # 1. Create and activate a virtualenv
-python3.11 -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
 
 # 2. Install pinned dependencies
@@ -169,7 +169,7 @@ Optional flags:
 fight-night-matchup/
 ├── app.py                    Flask server + routes
 ├── data/
-│   ├── fighters.json         Fighter database (54 fighters, stats through early 2025)
+│   ├── fighters.json         Fighter database (86 fighters, stats through Sep 2026)
 │   └── load_fighters.py      Lookup, fuzzy match, percentile computation
 ├── llm/
 │   ├── schemas.py            Pydantic models — the "predictable format"
@@ -195,8 +195,11 @@ fight-night-matchup/
 
 ## Data note
 
-`data/fighters.json` is a hand-curated snapshot of public UFC career
-statistics through approximately early 2025, covering 54 well-known fighters
-across all weight classes including women's divisions. The stats and recent
-fight results reflect that point in time and are used for analysis only — this
-app does not claim to have live or current data.
+`data/fighters.json` is a snapshot of public UFC career statistics current
+through **19 September 2026 (UFC 331)**, covering 86 fighters across all weight
+classes including women's divisions. Records and recent results were sourced
+from ufc.com athlete profiles. See `snapshot_note` inside the JSON for known
+gaps — stance is marked `Unknown` where it could not be confirmed, ufc.com
+takedown-accuracy values are unreliable, and fighters with very few bouts have
+per-minute rates inflated by small samples. The stats are used for analysis
+only — this app does not claim to have live data.
