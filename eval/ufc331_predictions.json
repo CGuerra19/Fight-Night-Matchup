@@ -11,8 +11,9 @@
       "predicted_winner": "Joshua Van",
       "confidence": "medium",
       "rationale": "While Alexandre Pantoja has a clear advantage in grappling, Joshua Van's elite striking and ability to keep the fight standing could allow him to outpoint Pantoja. The stylistic clash favors Van if he can manage range effectively and avoid being taken down, making this a competitive matchup.",
-      "actual_winner": null,
-      "correct": null
+      "actual_winner": "Joshua Van",
+      "correct": true,
+      "actual_method": "Decision"
     },
     {
       "slot": "MAIN",
@@ -21,8 +22,9 @@
       "predicted_winner": "Arman Tsarukyan",
       "confidence": "high",
       "rationale": "Arman Tsarukyan is favored due to his clear advantages in grappling and cardio durability, which will allow him to control the pace of the fight and mitigate Ruffy's striking. Given Tsarukyan's elite takedown ability and strong fight IQ, he is likely to exploit Ruffy's weaknesses on the ground, leading to a decisive victory.",
-      "actual_winner": null,
-      "correct": null
+      "actual_winner": "Arman Tsarukyan",
+      "correct": true,
+      "actual_method": "KO"
     },
     {
       "slot": "MAIN",
@@ -31,8 +33,9 @@
       "predicted_winner": "Patricio Pitbull",
       "confidence": "medium",
       "rationale": "While Dooho Choi has a clear advantage in striking, Patricio Pitbull's grappling skills and elite takedown defense give him a strong path to victory. The stylistic clash favors Pitbull if he can successfully implement his grappling strategy, potentially neutralizing Choi's striking output.",
-      "actual_winner": null,
-      "correct": null
+      "actual_winner": "Patricio Pitbull",
+      "correct": true,
+      "actual_method": "KO"
     },
     {
       "slot": "MAIN",
@@ -41,8 +44,9 @@
       "predicted_winner": "Gable Steveson",
       "confidence": "medium",
       "rationale": "Gable Steveson is favored due to his clear advantage in striking accuracy and defense, which should allow him to outstrike Sean Sharaf effectively. While both fighters have grappling weaknesses, Steveson's superior striking fundamentals and recent form suggest he can exploit Sharaf's vulnerabilities, leading to a potential finish.",
-      "actual_winner": null,
-      "correct": null
+      "actual_winner": "Sean Sharaf",
+      "correct": false,
+      "actual_method": "KO R1 (~10 sec)"
     },
     {
       "slot": "MAIN",
@@ -51,8 +55,9 @@
       "predicted_winner": "Iwo Baraniewski",
       "confidence": "medium",
       "rationale": "Iwo Baraniewski's clear advantage in striking accuracy and volume gives him the edge in this matchup, despite both fighters having average cardio and grappling. Menifield's power is a significant factor, but Baraniewski's ability to maintain a high pace and avoid damage could lead him to victory.",
-      "actual_winner": null,
-      "correct": null
+      "actual_winner": "Alonzo Menifield",
+      "correct": false,
+      "actual_method": "Decision"
     },
     {
       "slot": "PRELIM",
@@ -61,8 +66,9 @@
       "predicted_winner": "Marlon Vera",
       "confidence": "medium",
       "rationale": "Marlon Vera is predicted to win due to his experience and resilience in the cage, which may allow him to withstand Jourdain's striking. While Jourdain has the advantage in striking accuracy and defense, Vera's high volume and ability to adapt in fights could be decisive, especially if he can leverage his takedown defense effectively.",
-      "actual_winner": null,
-      "correct": null
+      "actual_winner": "Marlon Vera",
+      "correct": true,
+      "actual_method": "KO"
     },
     {
       "slot": "PRELIM",
@@ -71,8 +77,9 @@
       "predicted_winner": "Tai Tuivasa",
       "confidence": "medium",
       "rationale": "While Despaigne has advantages in striking accuracy and cardio, Tuivasa's knockout power and experience could turn the tide in his favor during exchanges. The fight may hinge on Tuivasa's ability to pressure Despaigne effectively, potentially leading to a finish, despite Despaigne's defensive skills.",
-      "actual_winner": null,
-      "correct": null
+      "actual_winner": "Robelis Despaigne",
+      "correct": false,
+      "actual_method": "Decision"
     },
     {
       "slot": "PRELIM",
