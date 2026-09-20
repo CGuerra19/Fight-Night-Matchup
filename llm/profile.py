@@ -94,6 +94,20 @@ def _build_user_prompt(fighter: dict, percentile_context: Dict[str, dict],
     for fight in fighter["last_5"]:
         lines.append(f"  - {fight}")
 
+    sample = percentile_context.get("_sample") if use_percentiles else None
+    if sample:
+        lines.append("")
+        lines.append(
+            f"Sample size: {sample['fights']} professional fights "
+            f"(statistical reliability: {sample['reliability']}). "
+            "The percentiles above have already been regressed toward the "
+            "divisional median to account for this, so take them at face "
+            "value. Do not re-inflate a thin record into elite grades on the "
+            "strength of a few quick finishes, and do not write off an "
+            "inexperienced fighter either - a short record means unknown, "
+            "not bad. Say so in x_factors when reliability is low."
+        )
+
     lines.append("")
     lines.append("Now produce the FighterProfile.")
     return "\n".join(lines)

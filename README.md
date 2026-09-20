@@ -100,7 +100,7 @@ cp .env.example .env
 python app.py
 ```
 
-The server logs `Starting Fight Night Matchup on port 5000 (pipeline=v3)`
+The server logs `Starting Fight Night Matchup on port 5000 (pipeline=v5)`
 and listens on http://127.0.0.1:5000. Open that URL in any modern browser.
 
 ### Using the UI
@@ -138,7 +138,7 @@ factual accuracy / advantage identification / calibration (50%), and a
 forbidden-claim check (10%). Results land in `eval/results/`.
 
 ```bash
-# Default: runs version v3 (the full two-stage + percentile-context pipeline)
+# Default: runs version v5
 python eval/run_eval.py
 ```
 
@@ -150,9 +150,46 @@ to a separately named results file.
 ```bash
 PIPELINE_VERSION=v1 python eval/run_eval.py     # single-prompt baseline
 PIPELINE_VERSION=v2 python eval/run_eval.py     # two-stage, no percentile context
-PIPELINE_VERSION=v3 python eval/run_eval.py     # two-stage with percentile context (default)
+PIPELINE_VERSION=v3 python eval/run_eval.py     # two-stage with percentile context
 PIPELINE_VERSION=v4 python eval/run_eval.py     # v3 + deterministic closeness/calibration hint
+PIPELINE_VERSION=v5 python eval/run_eval.py     # v4 + sample-size shrinkage, physical context,
+                                                #      statistical-favorite guard (default)
 ```
+
+### A note on V5
+
+V5 was built from the UFC 331 post-mortem (`eval/ufc331_predictions.json`,
+7/10 correct). It makes three deterministic changes - no extra LLM calls, so
+cost per matchup is unchanged:
+
+1. **Sample-size shrinkage.** Stage 1 percentiles are regressed toward the
+   divisional median in proportion to how many fights they were computed
+   over. Gable Steveson was graded "elite" striking off 16.29 SLpM across
+   four first-round finishes, and lost; he now grades "above-average". The
+   correction is symmetric - a thin record means unknown, not bad.
+2. **Physical attributes reach Stage 2.** The `FighterProfile` schema carries
+   no height, reach, age or stance, so Stage 2 had been judging its
+   "physical" advantage category with no physical data at all. Despaigne beat
+   Tuivasa with a nine-inch reach edge that never entered the reasoning.
+3. **Statistical-favorite guard.** Stage 2 is told which fighter leads on
+   aggregate percentiles and must justify picking against it. This targets a
+   specific observed failure where the model named its opponent's advantages
+   and then picked the other fighter anyway on "power and experience".
+
+V5 also enables corrected confidence banding. The V4 banding contains a bug -
+both arms of its middle branch return `"medium"` - which is why REPORT.md
+records V4 calibration as no better than V3. The bug is left intact under
+`spread=False` so the V1-V4 sweep still reproduces exactly.
+
+**Honest caveat on results.** V5 scores 0.850 aggregate on the 12-case
+harness, against 0.864 for V2 and 0.858 for V3. It does not win. The whole
+V1-V5 spread is 0.847-0.864 across 12 cases, which is well inside noise, and
+the harness does not score prediction accuracy at all - it measures fact
+coverage, forbidden claims, and judge ratings. The changes above target
+picking winners, which this harness cannot see. On the only head-to-head
+evidence available, the seven decided UFC 331 bouts, V5 went 5/7 where V3
+went 4/7 - but those fixes were designed knowing those outcomes, so treat
+that number as a sanity check, not a result.
 
 A run takes ~1–3 minutes and ~$0.05 in OpenAI credit on `gpt-4o-mini`.
 

@@ -172,7 +172,8 @@ def _closeness_label(mean_gap: float) -> str:
     return "dominant"
 
 
-def build_closeness_context(ctx_a: Dict[str, dict], ctx_b: Dict[str, dict]) -> dict:
+def build_closeness_context(ctx_a: Dict[str, dict], ctx_b: Dict[str, dict],
+                            spread: bool = False) -> dict:
     """Deterministically compute how close two fighters are across all
     stat categories. Returns a dict with:
       - overall_closeness: label (very close / competitive / clear edge / dominant)
@@ -202,7 +203,21 @@ def build_closeness_context(ctx_a: Dict[str, dict], ctx_b: Dict[str, dict]) -> d
     # Recommended confidence: driven by overall gap with a slight boost
     # if multiple categories are decisive.
     decisive_cats = sum(1 for v in category_gaps.values() if v in ("clear edge", "dominant"))
-    if overall_gap <= 12:
+    if spread:
+        # V5 banding. The V4 logic below contains a bug - both arms of its
+        # middle branch return "medium" - and since most matchups land in
+        # that band, V4 could almost never emit anything but "medium". That
+        # is why REPORT.md records V4 calibration as no better than V3.
+        # Kept intact under `spread=False` so the V1-V4 sweep still reproduces.
+        if overall_gap <= 10:
+            rec_conf = "low"
+        elif overall_gap <= 22:
+            rec_conf = "low" if decisive_cats == 0 else "medium"
+        elif overall_gap <= 34:
+            rec_conf = "high" if decisive_cats >= 2 else "medium"
+        else:
+            rec_conf = "high"
+    elif overall_gap <= 12:
         rec_conf = "low"
     elif overall_gap <= 28:
         rec_conf = "medium" if decisive_cats < 2 else "medium"
@@ -226,4 +241,121 @@ def build_closeness_context(ctx_a: Dict[str, dict], ctx_b: Dict[str, dict]) -> d
         "recommended_confidence": rec_conf,
         "category_gaps": category_gaps,
         "note": note,
+    }
+
+
+# ---------------------------------------------------------------------------
+# V5: Sample-size shrinkage, physical context, statistical favorite
+# ---------------------------------------------------------------------------
+#
+# Motivated by the UFC 331 miss analysis (eval/ufc331_predictions.json).
+# Two of three wrong picks were fighters whose per-minute rates were computed
+# over a handful of first-round finishes: Gable Steveson graded "elite
+# striking" off 16.29 SLpM across 4 fights, Iwo Baraniewski off 11.35 SLpM
+# across 9. Both got beaten by more experienced opponents. Raw rate stats over
+# tiny samples are noise, but the percentile ranking treated them as signal.
+
+CONFIDENCE_PRIOR = 8.0  # pseudo-fights; controls how hard thin samples regress
+
+
+def fight_count(fighter: dict) -> int:
+    """Total professional bouts parsed from the 'W-L-D' record string."""
+    try:
+        return sum(int(p) for p in fighter["record"].split("-")[:3])
+    except (ValueError, KeyError):
+        return 0
+
+
+def reliability_label(n: int) -> str:
+    if n >= 20:
+        return "high"
+    if n >= 12:
+        return "moderate"
+    if n >= 7:
+        return "low"
+    return "very low"
+
+
+def _compress(pct: int, n: int, k: float = CONFIDENCE_PRIOR) -> int:
+    """Regress a percentile toward 50 in proportion to sample size.
+
+    weight = n / (n + k). A 4-fight fighter keeps a third of their distance
+    from the median; a 29-fight veteran keeps nearly four fifths. This is
+    symmetric on purpose: with few fights we do not know a fighter is elite,
+    and we equally do not know they are terrible.
+
+    Shrinking the raw values instead does not work - the peer population
+    shrinks with them, so an outlier keeps its rank.
+    """
+    if n <= 0:
+        return 50
+    w = n / (n + k)
+    return int(round(50 + (pct - 50) * w))
+
+
+def build_percentile_context_shrunk(fighter: dict) -> Dict[str, dict]:
+    """Like build_percentile_context, but each percentile is regressed toward
+    the median according to how many fights it was computed over, and the
+    tier label is re-derived from the regressed value.
+
+    The tier is what the Stage 1 prompt is told to treat as ground truth, so
+    capping it here is what actually stops a 4-fight record from being graded
+    "elite". V5 only - V3/V4 behaviour is untouched.
+    """
+    raw = build_percentile_context(fighter)
+    n = fight_count(fighter)
+    out: Dict[str, dict] = {}
+    for stat, entry in raw.items():
+        pct = _compress(entry["percentile"], n)
+        out[stat] = {
+            "value": entry["value"],
+            "percentile": pct,
+            "raw_percentile": entry["percentile"],
+            "tier": _pct_to_tier(pct),
+        }
+    out["_sample"] = {"fights": n, "reliability": reliability_label(n)}
+    return out
+
+
+def build_physical_context(fighter: dict) -> dict:
+    """Physical attributes for Stage 2.
+
+    Stage 2 is asked to judge a 'physical' advantage category but the
+    FighterProfile schema carries no height, reach, age or stance, so before
+    V5 that category was decided with no physical data at all. Despaigne beat
+    Tuivasa at UFC 331 with a nine-inch reach edge that never entered the
+    reasoning.
+    """
+    return {
+        "name": fighter["name"],
+        "height_in": fighter["height_in"],
+        "reach_in": fighter["reach_in"],
+        "age": fighter["age"],
+        "stance": fighter.get("stance", "Unknown"),
+        "fights": fight_count(fighter),
+    }
+
+
+def build_statistical_favorite(ctx_a: Dict[str, dict], ctx_b: Dict[str, dict],
+                               name_a: str, name_b: str) -> dict:
+    """Which fighter leads on more percentile categories, and by how much.
+
+    Handed to Stage 2 so that picking the other fighter becomes an explicit,
+    justified deviation rather than an unnoticed one.
+    """
+    stats = [s for s in PERCENTILE_STATS + ["sapm"] if s in ctx_a and s in ctx_b]
+    a_wins = sum(1 for s in stats if ctx_a[s]["percentile"] > ctx_b[s]["percentile"])
+    b_wins = sum(1 for s in stats if ctx_b[s]["percentile"] > ctx_a[s]["percentile"])
+    mean_a = sum(ctx_a[s]["percentile"] for s in stats) / len(stats)
+    mean_b = sum(ctx_b[s]["percentile"] for s in stats) / len(stats)
+
+    if abs(mean_a - mean_b) < 4:
+        favorite = "neither (statistically even)"
+    else:
+        favorite = name_a if mean_a > mean_b else name_b
+
+    return {
+        "favorite": favorite,
+        "category_wins": {name_a: a_wins, name_b: b_wins},
+        "mean_percentile": {name_a: round(mean_a, 1), name_b: round(mean_b, 1)},
     }

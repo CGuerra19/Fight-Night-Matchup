@@ -88,7 +88,9 @@ def _render_profile(profile: FighterProfile, label: str) -> str:
 
 
 def generate_matchup(profile_a: FighterProfile, profile_b: FighterProfile,
-                     closeness_context: Optional[dict] = None) -> MatchupAnalysis:
+                     closeness_context: Optional[dict] = None,
+                     physical: Optional[tuple] = None,
+                     statistical_favorite: Optional[dict] = None) -> MatchupAnalysis:
     """Call the LLM and return a validated MatchupAnalysis.
 
     Args:
@@ -105,6 +107,42 @@ def generate_matchup(profile_a: FighterProfile, profile_b: FighterProfile,
         + "Produce the MatchupAnalysis now. "
         + f"predicted_winner must be exactly '{profile_a.name}' or '{profile_b.name}'."
     )
+
+    if physical:
+        pa, pb = physical
+        user_prompt += (
+            "\n\n--- PHYSICAL ATTRIBUTES (deterministic, treat as ground truth) ---\n"
+            f"{pa['name']}: {pa['height_in']}in tall, {pa['reach_in']}in reach, "
+            f"age {pa['age']}, stance {pa['stance']}, {pa['fights']} pro fights\n"
+            f"{pb['name']}: {pb['height_in']}in tall, {pb['reach_in']}in reach, "
+            f"age {pb['age']}, stance {pb['stance']}, {pb['fights']} pro fights\n"
+            "Base the 'physical' advantage on these numbers, not on impressions. "
+            "A reach gap of 4in or more is material; 8in or more is decisive. "
+            "When both stances are known and differ (orthodox vs southpaw), say so "
+            "explicitly and describe the open-stance dynamic - it is frequently "
+            "decisive. Only when a stance reads 'Unknown' should you avoid the "
+            "subject rather than guess."
+        )
+
+    if statistical_favorite:
+        sf = statistical_favorite
+        user_prompt += (
+            "\n\n--- STATISTICAL FAVORITE (deterministic) ---\n"
+            f"Favorite on aggregate percentiles: {sf['favorite']}\n"
+            f"Categories led: {sf['category_wins']}\n"
+            f"Mean percentile: {sf['mean_percentile']}\n"
+            "You may pick the other fighter, but if you do, prediction_rationale "
+            "MUST name the specific concrete factor that outweighs the statistical "
+            "edge, and confidence MUST NOT be 'high'. Do not cite the opponent's "
+            "advantages and then pick against them without explaining why those "
+            "advantages fail to apply here.\n"
+            "This aggregate is an input to the pick, NOT a substitute for stylistic "
+            "analysis. Percentiles do not capture what makes a fighter dangerous. "
+            "stylistic_clash and key_factors must still name each fighter's "
+            "signature qualitative traits by name - knockout power, unorthodox or "
+            "creative striking, volume and pace, submission threat, chin, stance "
+            "dynamics - exactly as you would if no statistics had been provided."
+        )
 
     if closeness_context:
         user_prompt += (
