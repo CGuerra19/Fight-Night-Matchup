@@ -1,0 +1,128 @@
+{
+  "event": "UFC 331: Van vs. Pantoja 2",
+  "date": "2026-09-19",
+  "generated_at": "2026-09-19T17:07:48",
+  "pipeline": "current default",
+  "predictions": [
+    {
+      "slot": "MAIN",
+      "bout": "Joshua Van vs Alexandre Pantoja",
+      "weight_class": "Flyweight TITLE",
+      "predicted_winner": "Joshua Van",
+      "confidence": "medium",
+      "rationale": "While Alexandre Pantoja has a clear advantage in grappling, Joshua Van's elite striking and ability to keep the fight standing could allow him to outpoint Pantoja. The stylistic clash favors Van if he can manage range effectively and avoid being taken down, making this a competitive matchup.",
+      "actual_winner": null,
+      "correct": null
+    },
+    {
+      "slot": "MAIN",
+      "bout": "Arman Tsarukyan vs Mauricio Ruffy",
+      "weight_class": "Lightweight (5rd)",
+      "predicted_winner": "Arman Tsarukyan",
+      "confidence": "high",
+      "rationale": "Arman Tsarukyan is favored due to his clear advantages in grappling and cardio durability, which will allow him to control the pace of the fight and mitigate Ruffy's striking. Given Tsarukyan's elite takedown ability and strong fight IQ, he is likely to exploit Ruffy's weaknesses on the ground, leading to a decisive victory.",
+      "actual_winner": null,
+      "correct": null
+    },
+    {
+      "slot": "MAIN",
+      "bout": "Patricio Pitbull vs Dooho Choi",
+      "weight_class": "Featherweight",
+      "predicted_winner": "Patricio Pitbull",
+      "confidence": "medium",
+      "rationale": "While Dooho Choi has a clear advantage in striking, Patricio Pitbull's grappling skills and elite takedown defense give him a strong path to victory. The stylistic clash favors Pitbull if he can successfully implement his grappling strategy, potentially neutralizing Choi's striking output.",
+      "actual_winner": null,
+      "correct": null
+    },
+    {
+      "slot": "MAIN",
+      "bout": "Gable Steveson vs Sean Sharaf",
+      "weight_class": "Heavyweight",
+      "predicted_winner": "Gable Steveson",
+      "confidence": "medium",
+      "rationale": "Gable Steveson is favored due to his clear advantage in striking accuracy and defense, which should allow him to outstrike Sean Sharaf effectively. While both fighters have grappling weaknesses, Steveson's superior striking fundamentals and recent form suggest he can exploit Sharaf's vulnerabilities, leading to a potential finish.",
+      "actual_winner": null,
+      "correct": null
+    },
+    {
+      "slot": "MAIN",
+      "bout": "Alonzo Menifield vs Iwo Baraniewski",
+      "weight_class": "Light Heavyweight",
+      "predicted_winner": "Iwo Baraniewski",
+      "confidence": "medium",
+      "rationale": "Iwo Baraniewski's clear advantage in striking accuracy and volume gives him the edge in this matchup, despite both fighters having average cardio and grappling. Menifield's power is a significant factor, but Baraniewski's ability to maintain a high pace and avoid damage could lead him to victory.",
+      "actual_winner": null,
+      "correct": null
+    },
+    {
+      "slot": "PRELIM",
+      "bout": "Marlon Vera vs Charles Jourdain",
+      "weight_class": "Bantamweight",
+      "predicted_winner": "Marlon Vera",
+      "confidence": "medium",
+      "rationale": "Marlon Vera is predicted to win due to his experience and resilience in the cage, which may allow him to withstand Jourdain's striking. While Jourdain has the advantage in striking accuracy and defense, Vera's high volume and ability to adapt in fights could be decisive, especially if he can leverage his takedown defense effectively.",
+      "actual_winner": null,
+      "correct": null
+    },
+    {
+      "slot": "PRELIM",
+      "bout": "Tai Tuivasa vs Robelis Despaigne",
+      "weight_class": "Heavyweight",
+      "predicted_winner": "Tai Tuivasa",
+      "confidence": "medium",
+      "rationale": "While Despaigne has advantages in striking accuracy and cardio, Tuivasa's knockout power and experience could turn the tide in his favor during exchanges. The fight may hinge on Tuivasa's ability to pressure Despaigne effectively, potentially leading to a finish, despite Despaigne's defensive skills.",
+      "actual_winner": null,
+      "correct": null
+    },
+    {
+      "slot": "PRELIM",
+      "bout": "Michael Aswell Jr. vs JooSang Yoo",
+      "weight_class": "Featherweight",
+      "predicted_winner": "Michael Aswell Jr.",
+      "confidence": "medium",
+      "rationale": "Michael Aswell Jr. is favored in striking due to his elite grade and high output, which could exploit Yoo's tendency to absorb strikes. While both fighters have poor grappling, Aswell Jr.'s youthful energy may give him an edge in a striking battle, making him the likely winner.",
+      "actual_winner": null,
+      "correct": null
+    },
+    {
+      "slot": "EARLY",
+      "bout": "Edmen Shahbazyan vs Brunno Ferreira",
+      "weight_class": "Middleweight",
+      "predicted_winner": "Edmen Shahbazyan",
+      "confidence": "medium",
+      "rationale": "Edmen Shahbazyan has a slight advantage in grappling and physicality, which may allow him to impose his game plan more effectively. While both fighters are evenly matched in striking, Shahbazyan's ability to secure takedowns and his recent improvements in grappling could be pivotal in this matchup.",
+      "actual_winner": null,
+      "correct": null
+    },
+    {
+      "slot": "EARLY",
+      "bout": "Casey O'Neill vs Eduarda Moura",
+      "weight_class": "Women's Flyweight",
+      "predicted_winner": "Casey O'Neill",
+      "confidence": "medium",
+      "rationale": "While Moura has a clear advantage in grappling and durability, O'Neill's elite striking and ability to maintain range could allow her to outpoint Moura. The fight could hinge on whether O'Neill can keep the fight standing and utilize her striking effectively, making her the favored pick despite the grappling threat.",
+      "actual_winner": "Casey O'Neill",
+      "correct": true
+    },
+    {
+      "slot": "EARLY",
+      "bout": "Joanderson Brito vs Giga Chikadze",
+      "weight_class": "Featherweight",
+      "predicted_winner": "Joanderson Brito",
+      "confidence": "medium",
+      "rationale": "Joanderson Brito is favored due to his clear advantages in grappling and cardio, which are critical in this matchup against a counter-striker like Chikadze. While both fighters have similar striking output, Brito's elite grappling skills and durability should allow him to control the fight and potentially secure a finish.",
+      "actual_winner": "Joanderson Brito",
+      "correct": true
+    },
+    {
+      "slot": "EARLY",
+      "bout": "Ryan Gandra vs Ozzy Diaz",
+      "weight_class": "Middleweight",
+      "predicted_winner": "Ryan Gandra",
+      "confidence": "medium",
+      "rationale": "Ryan Gandra is favored due to his clear advantage in striking skills and elite striking defense, which should allow him to dictate the fight's pace. While both fighters have weak grappling, Gandra's above-average cardio could help him maintain pressure and capitalize on Diaz's high absorption rate.",
+      "actual_winner": "Ryan Gandra",
+      "correct": true
+    }
+  ]
+}

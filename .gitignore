@@ -7,3 +7,9 @@ venv/
 .DS_Store
 .idea/
 .vscode/
+
+# local backups
+data/*.bak*
+
+# unrelated IDE specs
+.kiro/
